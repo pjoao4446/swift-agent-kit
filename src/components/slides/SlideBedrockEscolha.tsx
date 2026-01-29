@@ -1,5 +1,5 @@
 import NuageLogo from "./NuageLogo";
-import { Search, Settings, Plug, ArrowRight } from "lucide-react";
+import { Search, Settings, Plug, ChevronRight, Sparkles, Check } from "lucide-react";
 
 const SlideBedrockEscolha = () => {
   const steps = [
@@ -8,18 +8,24 @@ const SlideBedrockEscolha = () => {
       title: "Escolha",
       description: "Selecione o modelo ideal para seu caso de uso",
       color: "bg-nuage-cyan",
+      glowColor: "shadow-nuage-cyan/40",
+      items: ["Claude", "Llama", "Mistral", "+200 modelos"],
     },
     {
       icon: Settings,
       title: "Customize",
       description: "Ajuste com seus dados e parâmetros específicos",
       color: "bg-nuage-gold",
+      glowColor: "shadow-nuage-gold/40",
+      items: ["Fine-tuning", "RAG", "Prompts"],
     },
     {
       icon: Plug,
       title: "Integre",
       description: "Conecte às suas aplicações via APIs",
       color: "bg-primary",
+      glowColor: "shadow-primary/40",
+      items: ["REST API", "SDKs", "Agents"],
     },
   ];
 
@@ -32,7 +38,7 @@ const SlideBedrockEscolha = () => {
       </div>
 
       <div className="slide-content relative z-10">
-        <div className="text-center mb-12">
+        <div className="text-center mb-10">
           <span className="inline-block px-4 py-2 rounded-full card-glass text-sm font-medium text-muted-foreground mb-4 opacity-0 animate-fade-in">
             Amazon Bedrock
           </span>
@@ -44,32 +50,65 @@ const SlideBedrockEscolha = () => {
           </p>
         </div>
 
-        <div className="max-w-5xl mx-auto">
-          <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-8">
-            {steps.map((step, index) => (
-              <div key={step.title} className="flex items-center gap-4 md:gap-8">
+        <div className="max-w-6xl mx-auto">
+          {/* Journey visual */}
+          <div className="relative">
+            {/* Linha de conexão animada */}
+            <div className="hidden md:block absolute top-1/2 left-0 right-0 h-1 bg-gradient-to-r from-nuage-cyan via-nuage-gold to-primary transform -translate-y-1/2 z-0 opacity-0 animate-fade-in delay-300">
+              <div className="absolute inset-0 bg-gradient-to-r from-nuage-cyan via-nuage-gold to-primary animate-pulse" />
+            </div>
+
+            <div className="grid md:grid-cols-3 gap-8 relative z-10">
+              {steps.map((step, index) => (
                 <div
-                  className="pillar-card text-center w-64 opacity-0 animate-scale-in"
+                  key={step.title}
+                  className="opacity-0 animate-scale-in"
                   style={{ animationDelay: `${0.25 + index * 0.15}s` }}
                 >
-                  <div className={`w-20 h-20 rounded-2xl ${step.color} flex items-center justify-center mx-auto mb-4`}>
-                    <step.icon className="w-10 h-10 text-background" />
+                  <div className="card-glass p-6 rounded-2xl hover:scale-105 transition-all duration-500 group relative overflow-hidden">
+                    {/* Glow effect */}
+                    <div className={`absolute inset-0 ${step.color}/5 opacity-0 group-hover:opacity-100 transition-opacity`} />
+                    
+                    {/* Número do passo */}
+                    <div className="absolute top-4 right-4 w-8 h-8 rounded-full bg-background/50 flex items-center justify-center text-sm font-bold text-muted-foreground">
+                      {index + 1}
+                    </div>
+
+                    {/* Ícone principal */}
+                    <div className={`w-20 h-20 rounded-2xl ${step.color} flex items-center justify-center mx-auto mb-6 shadow-lg ${step.glowColor} group-hover:shadow-xl transition-shadow`}>
+                      <step.icon className="w-10 h-10 text-background" />
+                    </div>
+
+                    <h3 className="text-2xl font-bold mb-2 text-center">{step.title}</h3>
+                    <p className="text-sm text-muted-foreground text-center mb-4">{step.description}</p>
+
+                    {/* Items list */}
+                    <div className="space-y-2">
+                      {step.items.map((item, i) => (
+                        <div key={i} className="flex items-center gap-2 text-sm">
+                          <Check className={`w-4 h-4 ${index === 0 ? 'text-nuage-cyan' : index === 1 ? 'text-nuage-gold' : 'text-primary'}`} />
+                          <span className="text-muted-foreground">{item}</span>
+                        </div>
+                      ))}
+                    </div>
+
+                    {/* Seta para próximo */}
+                    {index < steps.length - 1 && (
+                      <div className="hidden md:flex absolute -right-6 top-1/2 transform -translate-y-1/2 z-20">
+                        <div className="w-12 h-12 rounded-full bg-background/80 backdrop-blur flex items-center justify-center border border-border">
+                          <ChevronRight className="w-6 h-6 text-foreground animate-pulse" />
+                        </div>
+                      </div>
+                    )}
                   </div>
-                  <h3 className="text-2xl font-bold mb-2">{step.title}</h3>
-                  <p className="text-sm text-muted-foreground">{step.description}</p>
                 </div>
-                
-                {index < steps.length - 1 && (
-                  <div className="hidden md:block opacity-0 animate-fade-in" style={{ animationDelay: `${0.4 + index * 0.15}s` }}>
-                    <ArrowRight className="w-8 h-8 text-muted-foreground" />
-                  </div>
-                )}
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
 
-          <div className="text-center mt-12 opacity-0 animate-fade-in-up delay-700">
-            <div className="inline-block card-glass px-8 py-4 rounded-2xl">
+          <div className="text-center mt-10 opacity-0 animate-fade-in-up delay-700">
+            <div className="inline-flex items-center gap-3 card-glass px-8 py-4 rounded-2xl">
+              <Sparkles className="w-6 h-6 text-nuage-gold" />
               <p className="text-lg">
                 De <span className="text-primary font-bold">ideia</span> a <span className="text-gradient-gold font-bold">produção</span> em tempo recorde
               </p>
