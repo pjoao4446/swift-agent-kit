@@ -44,7 +44,7 @@ const Slide20ThankYou = () => {
         <div className="opacity-0 animate-fade-in-up delay-500">
           <div className="badge-gold inline-flex items-center gap-2">
             <Award className="w-5 h-5" />
-            <span>TOP 10 AWS SOLUTIONS PROVIDER 2024</span>
+            <span>TOP 10 AWS SOLUTIONS PROVIDER</span>
           </div>
         </div>
       </div>
