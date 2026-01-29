@@ -58,14 +58,14 @@ const SlideBedrockEscolha = () => {
               <div className="absolute inset-0 bg-gradient-to-r from-nuage-cyan via-nuage-gold to-primary animate-pulse" />
             </div>
 
-            <div className="grid md:grid-cols-3 gap-8 relative z-10">
+            <div className="grid md:grid-cols-3 gap-12 relative z-10">
               {steps.map((step, index) => (
                 <div
                   key={step.title}
-                  className="opacity-0 animate-scale-in"
+                  className="opacity-0 animate-scale-in relative"
                   style={{ animationDelay: `${0.25 + index * 0.15}s` }}
                 >
-                  <div className="card-glass p-6 rounded-2xl hover:scale-105 transition-all duration-500 group relative overflow-hidden">
+                  <div className="card-glass p-6 rounded-2xl hover:scale-105 transition-all duration-500 group relative overflow-hidden h-full min-h-[320px] flex flex-col">
                     {/* Glow effect */}
                     <div className={`absolute inset-0 ${step.color}/5 opacity-0 group-hover:opacity-100 transition-opacity`} />
                     
@@ -83,7 +83,7 @@ const SlideBedrockEscolha = () => {
                     <p className="text-sm text-muted-foreground text-center mb-4">{step.description}</p>
 
                     {/* Items list */}
-                    <div className="space-y-2">
+                    <div className="space-y-2 flex-1">
                       {step.items.map((item, i) => (
                         <div key={i} className="flex items-center gap-2 text-sm">
                           <Check className={`w-4 h-4 ${index === 0 ? 'text-nuage-cyan' : index === 1 ? 'text-nuage-gold' : 'text-primary'}`} />
@@ -91,16 +91,16 @@ const SlideBedrockEscolha = () => {
                         </div>
                       ))}
                     </div>
-
-                    {/* Seta para próximo */}
-                    {index < steps.length - 1 && (
-                      <div className="hidden md:flex absolute -right-6 top-1/2 transform -translate-y-1/2 z-20">
-                        <div className="w-12 h-12 rounded-full bg-background/80 backdrop-blur flex items-center justify-center border border-border">
-                          <ChevronRight className="w-6 h-6 text-foreground animate-pulse" />
-                        </div>
-                      </div>
-                    )}
                   </div>
+
+                  {/* Seta entre cards - FORA do card para sobrepor */}
+                  {index < steps.length - 1 && (
+                    <div className="hidden md:flex absolute -right-6 top-1/2 transform -translate-y-1/2 z-30">
+                      <div className="w-12 h-12 rounded-full bg-background/90 backdrop-blur flex items-center justify-center border-2 border-primary shadow-lg shadow-primary/30">
+                        <ChevronRight className="w-6 h-6 text-primary animate-pulse" />
+                      </div>
+                    </div>
+                  )}
                 </div>
               ))}
             </div>

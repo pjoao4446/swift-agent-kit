@@ -58,13 +58,13 @@ const Slide19NextSteps = () => {
                 {index < steps.length - 1 && (
                   <div className="hidden md:block absolute top-12 left-full w-full h-px bg-gradient-to-r from-primary to-transparent z-0" />
                 )}
-                <div className="pillar-card text-center relative z-10">
-                  <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-primary to-nuage-cyan flex items-center justify-center mx-auto mb-4">
+                <div className="pillar-card text-center relative z-10 h-full min-h-[260px] flex flex-col items-center justify-start pt-6">
+                  <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-primary to-nuage-cyan flex items-center justify-center mb-4">
                     <step.icon className="w-8 h-8 text-foreground" />
                   </div>
                   <span className="text-3xl font-black text-muted/30">{step.step}</span>
                   <h3 className="text-lg font-bold mt-2 mb-2">{step.title}</h3>
-                  <p className="text-sm text-muted-foreground">{step.description}</p>
+                  <p className="text-sm text-muted-foreground flex-1">{step.description}</p>
                 </div>
               </div>
             ))}
