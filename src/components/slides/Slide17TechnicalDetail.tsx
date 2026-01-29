@@ -12,13 +12,10 @@ const Slide17TechnicalDetail = () => {
 
       <div className="slide-content relative z-10">
         <div className="text-center mb-16">
-          <span className="inline-block px-4 py-2 rounded-full card-glass text-sm font-medium text-muted-foreground mb-4 opacity-0 animate-fade-in">
-            Módulo 5 • AgentCore
-          </span>
-          <h2 className="text-4xl md:text-5xl font-black tracking-tight mb-4 opacity-0 animate-fade-in-up delay-100">
+          <h2 className="text-4xl md:text-5xl font-black tracking-tight mb-4 opacity-0 animate-fade-in-up">
             Detalhe <span className="text-gradient-magenta">Técnico</span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto opacity-0 animate-fade-in-up delay-200">
+          <p className="text-xl text-muted-foreground max-w-2xl mx-auto opacity-0 animate-fade-in-up delay-100">
             Isolamento de sessão via Micro VMs
           </p>
         </div>

@@ -28,7 +28,7 @@ const SlideDadosDiferencial = () => {
               <div className="bg-primary rounded-xl p-4 mb-4">
                 <div className="flex items-center gap-3">
                   <MessageSquare className="w-6 h-6 text-foreground" />
-                  <p className="text-foreground">"Escreva um poema sobre a Amazônia"</p>
+                  <p className="text-foreground">"Qual a melhor estratégia de marketing digital?"</p>
                 </div>
               </div>
               <div className="card-glass p-8 rounded-xl min-h-[180px] flex items-center justify-center">
@@ -45,7 +45,7 @@ const SlideDadosDiferencial = () => {
               <div className="bg-primary rounded-xl p-4 mb-4">
                 <div className="flex items-center gap-3">
                   <MessageSquare className="w-6 h-6 text-foreground" />
-                  <p className="text-foreground text-sm">"Qual foi o principal motivo de reclamação dos nossos clientes na Amazônia no último trimestre?"</p>
+                  <p className="text-foreground text-sm">"Qual foi a taxa de churn dos clientes premium do segmento varejo no Q3 e quais as ações sugeridas?"</p>
                 </div>
               </div>
               <div className="card-glass p-8 rounded-xl min-h-[180px] flex items-center justify-center">

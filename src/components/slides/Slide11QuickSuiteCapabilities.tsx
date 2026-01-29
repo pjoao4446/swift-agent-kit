@@ -45,13 +45,10 @@ const Slide11QuickSuiteCapabilities = () => {
 
       <div className="slide-content relative z-10">
         <div className="text-center mb-16">
-          <span className="inline-block px-4 py-2 rounded-full card-glass text-sm font-medium text-muted-foreground mb-4 opacity-0 animate-fade-in">
-            Módulo 4 • Amazon Quick Suite
-          </span>
-          <h2 className="text-4xl md:text-6xl font-black tracking-tight mb-4 opacity-0 animate-fade-in-up delay-100">
+          <h2 className="text-4xl md:text-6xl font-black tracking-tight mb-4 opacity-0 animate-fade-in-up">
             Quick <span className="text-gradient-magenta">Suite</span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto opacity-0 animate-fade-in-up delay-200">
+          <p className="text-xl text-muted-foreground max-w-2xl mx-auto opacity-0 animate-fade-in-up delay-100">
             5 capacidades integradas para BI e automação
           </p>
         </div>
