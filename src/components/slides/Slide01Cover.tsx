@@ -1,5 +1,4 @@
 import NuageLogo from "./NuageLogo";
-import { Award } from "lucide-react";
 
 const Slide01Cover = () => {
   return (
@@ -8,14 +7,8 @@ const Slide01Cover = () => {
       <div className="network-lines" />
       
       {/* Header */}
-      <div className="absolute top-8 left-8 right-8 flex justify-between items-center z-10">
+      <div className="absolute top-8 left-8 z-10">
         <NuageLogo />
-        <div className="flex items-center gap-3">
-          <div className="w-12 h-12 rounded-full border-2 border-primary flex items-center justify-center bg-card/50 backdrop-blur">
-            <span className="text-xs font-bold">360</span>
-          </div>
-          <span className="text-sm font-medium text-muted-foreground">360 Suites</span>
-        </div>
       </div>
 
       {/* Main Content */}
@@ -45,14 +38,6 @@ const Slide01Cover = () => {
           <button className="px-8 py-4 rounded-full bg-primary text-primary-foreground font-bold text-lg hover:scale-105 transition-transform glow-magenta">
             Iniciar Workshop
           </button>
-        </div>
-      </div>
-
-      {/* Footer Badge */}
-      <div className="absolute bottom-24 left-1/2 -translate-x-1/2 z-10 opacity-0 animate-fade-in-up delay-500">
-        <div className="badge-gold flex items-center gap-2 animate-pulse-glow">
-          <Award className="w-5 h-5" />
-          <span>TOP 10 AWS SOLUTIONS PROVIDER 2024</span>
         </div>
       </div>
     </div>
