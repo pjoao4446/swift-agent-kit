@@ -2,7 +2,10 @@ import { useState, useEffect, useCallback } from "react";
 import SlideNavigation from "@/components/slides/SlideNavigation";
 import Slide01Cover from "@/components/slides/Slide01Cover";
 import Slide02Purpose from "@/components/slides/Slide02Purpose";
-import Slide03Client from "@/components/slides/Slide03Client";
+import SlideConquistas from "@/components/slides/SlideConquistas";
+import SlideTop3Brasil from "@/components/slides/SlideTop3Brasil";
+import SlideOfertasServicos from "@/components/slides/SlideOfertasServicos";
+import SlideCoverIA from "@/components/slides/SlideCoverIA";
 import Slide04AWSSimplifies from "@/components/slides/Slide04AWSSimplifies";
 import Slide05Toolbox from "@/components/slides/Slide05Toolbox";
 import Slide06GenAIPotential from "@/components/slides/Slide06GenAIPotential";
@@ -24,7 +27,10 @@ import Slide20ThankYou from "@/components/slides/Slide20ThankYou";
 const slides = [
   Slide01Cover,
   Slide02Purpose,
-  Slide03Client,
+  SlideConquistas,
+  SlideTop3Brasil,
+  SlideOfertasServicos,
+  SlideCoverIA,
   Slide04AWSSimplifies,
   Slide05Toolbox,
   Slide06GenAIPotential,
