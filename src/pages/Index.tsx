@@ -6,9 +6,20 @@ import SlideConquistas from "@/components/slides/SlideConquistas";
 import SlideTop3Brasil from "@/components/slides/SlideTop3Brasil";
 import SlideOfertasServicos from "@/components/slides/SlideOfertasServicos";
 import SlideCoverIA from "@/components/slides/SlideCoverIA";
-import Slide04AWSSimplifies from "@/components/slides/Slide04AWSSimplifies";
-import Slide05Toolbox from "@/components/slides/Slide05Toolbox";
-import Slide06GenAIPotential from "@/components/slides/Slide06GenAIPotential";
+import SlideAIOrigin from "@/components/slides/SlideAIOrigin";
+import SlideIATradicional from "@/components/slides/SlideIATradicional";
+import SlideMachineLearning from "@/components/slides/SlideMachineLearning";
+import SlideDeepLearning from "@/components/slides/SlideDeepLearning";
+import SlideIAGenerativa from "@/components/slides/SlideIAGenerativa";
+import SlideModelosFundacionais from "@/components/slides/SlideModelosFundacionais";
+import SlideDadosDiferencial from "@/components/slides/SlideDadosDiferencial";
+import SlideAWSSimplificaNovo from "@/components/slides/SlideAWSSimplificaNovo";
+import SlideAWSToolbox from "@/components/slides/SlideAWSToolbox";
+import SlideBedrockIntro from "@/components/slides/SlideBedrockIntro";
+import SlideBedrockModelos from "@/components/slides/SlideBedrockModelos";
+import SlideBedrockEscolha from "@/components/slides/SlideBedrockEscolha";
+import SlideBedrockCustomizacao from "@/components/slides/SlideBedrockCustomizacao";
+import SlideBedrockArquitetura from "@/components/slides/SlideBedrockArquitetura";
 import Slide07KiroIntro from "@/components/slides/Slide07KiroIntro";
 import Slide08KiroUseCases from "@/components/slides/Slide08KiroUseCases";
 import Slide09KiroVsCopilot from "@/components/slides/Slide09KiroVsCopilot";
@@ -25,27 +36,45 @@ import Slide19NextSteps from "@/components/slides/Slide19NextSteps";
 import Slide20ThankYou from "@/components/slides/Slide20ThankYou";
 
 const slides = [
+  // Módulo 1: Abertura NuageIT
   Slide01Cover,
   Slide02Purpose,
   SlideConquistas,
   SlideTop3Brasil,
   SlideOfertasServicos,
+  // Módulo 2: Capa IA + Evolução
   SlideCoverIA,
-  Slide04AWSSimplifies,
-  Slide05Toolbox,
-  Slide06GenAIPotential,
+  SlideAIOrigin,
+  SlideIATradicional,
+  SlideMachineLearning,
+  SlideDeepLearning,
+  SlideIAGenerativa,
+  SlideModelosFundacionais,
+  SlideDadosDiferencial,
+  SlideAWSSimplificaNovo,
+  SlideAWSToolbox,
+  // Módulo 3: Amazon Bedrock
+  SlideBedrockIntro,
+  SlideBedrockModelos,
+  SlideBedrockEscolha,
+  SlideBedrockCustomizacao,
+  SlideBedrockArquitetura,
+  // Módulo 4: Amazon Kiro
   Slide07KiroIntro,
   Slide08KiroUseCases,
   Slide09KiroVsCopilot,
   Slide10KiroVsCursor,
+  // Módulo 5: Quick Suite
   Slide11QuickSuiteCapabilities,
   Slide12Spaces,
   Slide13BrowserExtension,
   Slide14QuickSuiteDifferentials,
+  // Módulo 6: AgentCore
   Slide15AgentCoreIntro,
   Slide16SevenPillars,
   Slide17TechnicalDetail,
   Slide18UseCases,
+  // Módulo 7: Encerramento
   Slide19NextSteps,
   Slide20ThankYou,
 ];
