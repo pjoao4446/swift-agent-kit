@@ -22,16 +22,15 @@ const Slide01Cover = () => {
         <h1 className="text-5xl md:text-7xl lg:text-8xl font-black tracking-tighter mb-6 opacity-0 animate-fade-in-up delay-100">
           <span className="text-foreground">WORKSHOP:</span>
           <br />
-          <span className="text-gradient-magenta">IA AGÊNTICA</span>
+          <span className="text-gradient-magenta">INTELIGÊNCIA</span>
           <br />
-          <span className="text-foreground">& PRODUTIVIDADE</span>
+          <span className="text-foreground">ARTIFICIAL</span>
         </h1>
 
         <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mb-12 opacity-0 animate-fade-in-up delay-200">
-          Transformando o amanhã com{" "}
-          <span className="text-nuage-cyan font-semibold">Amazon Kiro</span>,{" "}
-          <span className="text-nuage-cyan font-semibold">Quick Suite</span> e{" "}
-          <span className="text-nuage-cyan font-semibold">AgentCore</span>
+          Transformando o seu negócio através de tecnologias de{" "}
+          <span className="text-nuage-cyan font-semibold">inteligência artificial</span> na{" "}
+          <span className="text-nuage-cyan font-semibold">AWS</span>
         </p>
 
         <div className="flex gap-4 opacity-0 animate-fade-in-up delay-300">
