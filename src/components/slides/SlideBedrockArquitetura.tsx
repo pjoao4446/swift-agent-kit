@@ -59,11 +59,8 @@ const SlideBedrockArquitetura = () => {
 
       <div className="slide-content relative z-10">
         <div className="text-center mb-4">
-          <span className="inline-block px-4 py-2 rounded-full card-glass text-sm font-medium text-muted-foreground mb-2 opacity-0 animate-fade-in">
-            Amazon Bedrock
-          </span>
           <h2 className="text-3xl md:text-4xl font-black tracking-tight mb-2 opacity-0 animate-fade-in-up delay-100">
-            <span className="text-gradient-magenta">Arquitetura</span> de Referência
+            CRIE SUAS PRÓPRIAS <span className="text-gradient-magenta">SOLUÇÕES DE IA</span>
           </h2>
           <p className="text-base text-muted-foreground opacity-0 animate-fade-in-up delay-200">
             Fluxo completo de uma aplicação com IA Generativa
@@ -161,10 +158,10 @@ const SlideBedrockArquitetura = () => {
 
                 {/* Componentes do fluxo */}
                 
-                {/* App/Smartphone - posição: 60, 160 */}
+                {/* App/Smartphone - alinhado com linha y=160 */}
                 <div 
                   className={`absolute transition-all duration-300 ${isActive('app') ? 'scale-110' : ''}`}
-                  style={{ left: '28px', top: '128px' }}
+                  style={{ left: '28px', top: '50%', transform: 'translateY(-50%)' }}
                   onMouseEnter={() => setHoveredComponent('app')}
                   onMouseLeave={() => setHoveredComponent(null)}
                 >
@@ -178,10 +175,10 @@ const SlideBedrockArquitetura = () => {
                   <p className="text-xs text-center mt-2 font-mono text-muted-foreground">Client App</p>
                 </div>
 
-                {/* API Gateway - posição: 155, 160 */}
+                {/* API Gateway - alinhado com linha y=160 */}
                 <div 
                   className={`absolute transition-all duration-300 ${isActive('gateway') ? 'scale-110' : ''}`}
-                  style={{ left: '120px', top: '132px' }}
+                  style={{ left: '120px', top: '50%', transform: 'translateY(-50%)' }}
                   onMouseEnter={() => setHoveredComponent('gateway')}
                   onMouseLeave={() => setHoveredComponent(null)}
                 >
@@ -195,10 +192,10 @@ const SlideBedrockArquitetura = () => {
                   <p className="text-xs text-center mt-2 font-mono text-muted-foreground">API GW</p>
                 </div>
 
-                {/* Lambda - posição: 237, 160 */}
+                {/* Lambda - alinhado com linha y=160 */}
                 <div 
                   className={`absolute transition-all duration-300 ${isActive('lambda') ? 'scale-110' : ''}`}
-                  style={{ left: '205px', top: '128px' }}
+                  style={{ left: '205px', top: '50%', transform: 'translateY(-50%)' }}
                   onMouseEnter={() => setHoveredComponent('lambda')}
                   onMouseLeave={() => setHoveredComponent(null)}
                 >
