@@ -16,10 +16,6 @@ const Slide20ThankYou = () => {
           <span className="text-gradient-magenta">Obrigado!</span>
         </h2>
 
-        <h2 className="text-5xl md:text-7xl lg:text-8xl font-black tracking-tighter mb-6 opacity-0 animate-fade-in-up delay-100">
-          <span className="text-gradient-magenta">Obrigado!</span>
-        </h2>
-
         <p className="text-2xl text-muted-foreground mb-12 opacity-0 animate-fade-in-up delay-200">
           Perguntas & Discussão
         </p>

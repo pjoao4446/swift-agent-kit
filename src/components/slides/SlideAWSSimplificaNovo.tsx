@@ -1,5 +1,5 @@
 import NuageLogo from "./NuageLogo";
-import { MessageSquare, Layers, Server, Cpu } from "lucide-react";
+import { MessageSquare, Layers, Server, Sparkles, Brain, Cpu, Zap, Cloud, Database, Settings } from "lucide-react";
 
 const SlideAWSSimplificaNovo = () => {
   const layers = [
@@ -7,22 +7,34 @@ const SlideAWSSimplificaNovo = () => {
       title: "APLICAÇÕES PARA AUMENTAR PRODUTIVIDADE",
       services: "Amazon Q, Amazon Quick Suite, Amazon Kiro",
       subtitle: "INSIGHT E AUTOMAÇÃO",
-      color: "bg-nuage-cyan",
+      color: "from-nuage-cyan to-nuage-cyan/60",
+      bgColor: "bg-nuage-cyan",
+      borderColor: "border-nuage-cyan",
+      textColor: "text-nuage-cyan",
       icon: MessageSquare,
+      secondaryIcons: [Sparkles, Brain],
     },
     {
       title: "MODELOS E FERRAMENTAS PARA APPS DE GEN AI",
       services: "Amazon Bedrock",
       subtitle: "AMAZON MODELS | MODELOS DE PARCEIROS",
-      color: "bg-nuage-gold",
+      color: "from-nuage-gold to-nuage-gold/60",
+      bgColor: "bg-nuage-gold",
+      borderColor: "border-nuage-gold",
+      textColor: "text-nuage-gold",
       icon: Layers,
+      secondaryIcons: [Settings, Database],
     },
     {
       title: "INFRAESTRUTURA PARA CONSTRUIR/TREINAR MODELOS DE IA",
       services: "Amazon SageMaker AI, AWS Trainium, AWS Inferentia, GPUs",
       subtitle: "HIGH PERFORMANCE COMPUTE",
-      color: "bg-primary",
+      color: "from-primary to-primary/60",
+      bgColor: "bg-primary",
+      borderColor: "border-primary",
+      textColor: "text-primary",
       icon: Server,
+      secondaryIcons: [Cpu, Cloud],
     },
   ];
 
@@ -35,48 +47,58 @@ const SlideAWSSimplificaNovo = () => {
       </div>
 
       <div className="slide-content relative z-10">
-        <div className="mb-8">
-          <h2 className="text-4xl md:text-5xl font-black tracking-tight mb-4 opacity-0 animate-fade-in-up">
+        <div className="text-center mb-10">
+          <h2 className="text-4xl md:text-6xl font-black tracking-tight mb-4 opacity-0 animate-fade-in-up">
             <span className="text-gradient-gold">AWS</span> SIMPLIFICA
           </h2>
-          <p className="text-lg text-muted-foreground opacity-0 animate-fade-in-up delay-100">
-            <span className="bg-nuage-cyan px-2 py-1 rounded text-background font-medium">Como conectar</span> o poder dos FMs aos <span className="bg-nuage-gold/20 px-2 py-1 rounded text-nuage-gold font-medium">meus dados</span> de forma segura, privada e eficaz?
+          <p className="text-xl text-muted-foreground opacity-0 animate-fade-in-up delay-100">
+            <span className="bg-nuage-cyan px-3 py-1 rounded-lg text-background font-medium">Como conectar</span> o poder dos FMs aos <span className="bg-nuage-gold/20 px-3 py-1 rounded-lg text-nuage-gold font-medium">meus dados</span> de forma segura, privada e eficaz?
           </p>
         </div>
 
         <div className="max-w-6xl mx-auto">
-          <div className="card-glass p-8 rounded-3xl">
-            <div className="grid md:grid-cols-[200px_1fr] gap-8">
-              {/* Stack visual */}
-              <div className="hidden md:flex flex-col justify-center gap-2">
-                <div className="h-20 bg-nuage-cyan/30 rounded-lg border-2 border-nuage-cyan/50 opacity-0 animate-fade-in-up delay-200" />
-                <div className="h-20 bg-nuage-gold/30 rounded-lg border-2 border-nuage-gold/50 opacity-0 animate-fade-in-up delay-300" />
-                <div className="h-20 bg-primary/30 rounded-lg border-2 border-primary/50 opacity-0 animate-fade-in-up delay-400" />
-              </div>
-
-              {/* Content */}
-              <div className="space-y-6">
-                {layers.map((layer, index) => (
-                  <div
-                    key={layer.title}
-                    className="flex items-start gap-4 opacity-0 animate-fade-in-up"
-                    style={{ animationDelay: `${0.2 + index * 0.15}s` }}
-                  >
-                    <div className={`w-10 h-10 rounded-lg ${layer.color} flex items-center justify-center flex-shrink-0`}>
-                      <layer.icon className="w-5 h-5 text-background" />
+          <div className="space-y-6">
+            {layers.map((layer, index) => (
+              <div
+                key={layer.title}
+                className="opacity-0 animate-fade-in-up"
+                style={{ animationDelay: `${0.2 + index * 0.15}s` }}
+              >
+                <div className={`card-glass p-6 rounded-2xl border-l-4 ${layer.borderColor} hover:bg-background/40 transition-all duration-300`}>
+                  <div className="flex items-center gap-6">
+                    {/* Ícone principal grande */}
+                    <div className={`w-20 h-20 rounded-2xl bg-gradient-to-br ${layer.color} flex items-center justify-center flex-shrink-0 shadow-lg`}>
+                      <layer.icon className="w-10 h-10 text-background" />
                     </div>
-                    <div>
-                      <h3 className={`text-sm font-bold uppercase tracking-wide ${
-                        index === 0 ? 'text-nuage-cyan' : index === 1 ? 'text-nuage-gold' : 'text-primary'
-                      }`}>
+
+                    {/* Conteúdo */}
+                    <div className="flex-1">
+                      <h3 className={`text-lg font-bold uppercase tracking-wide ${layer.textColor} mb-1`}>
                         {layer.title}
                       </h3>
-                      <p className="text-foreground font-medium mt-1">{layer.services}</p>
-                      <p className="text-xs text-muted-foreground uppercase tracking-wider mt-1">{layer.subtitle}</p>
+                      <p className="text-xl text-foreground font-semibold">{layer.services}</p>
+                      <p className="text-sm text-muted-foreground uppercase tracking-wider mt-1">{layer.subtitle}</p>
+                    </div>
+
+                    {/* Ícones secundários */}
+                    <div className="hidden md:flex gap-3">
+                      {layer.secondaryIcons.map((Icon, i) => (
+                        <div key={i} className={`w-12 h-12 rounded-xl ${layer.bgColor}/20 flex items-center justify-center`}>
+                          <Icon className={`w-6 h-6 ${layer.textColor}`} />
+                        </div>
+                      ))}
                     </div>
                   </div>
-                ))}
+                </div>
               </div>
+            ))}
+          </div>
+
+          {/* Indicador visual de stack */}
+          <div className="flex justify-center mt-8 opacity-0 animate-fade-in-up delay-500">
+            <div className="flex items-center gap-2">
+              <Zap className="w-5 h-5 text-nuage-gold" />
+              <span className="text-muted-foreground">Stack completa para IA Generativa na AWS</span>
             </div>
           </div>
         </div>
