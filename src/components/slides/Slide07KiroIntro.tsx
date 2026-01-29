@@ -20,9 +20,9 @@ const Slide07KiroIntro = () => {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto items-center">
-          <div className="space-y-6 opacity-0 animate-slide-in-left delay-300">
-            <div className="pillar-card">
+        <div className="grid lg:grid-cols-2 gap-8 max-w-6xl mx-auto items-stretch">
+          <div className="flex flex-col gap-4 opacity-0 animate-slide-in-left delay-300">
+            <div className="pillar-card flex-1 flex flex-col justify-center">
               <div className="flex items-center gap-4 mb-4">
                 <div className="w-12 h-12 rounded-xl bg-primary/20 flex items-center justify-center">
                   <FileCode className="w-6 h-6 text-primary" />
@@ -35,7 +35,7 @@ const Slide07KiroIntro = () => {
               </p>
             </div>
 
-            <div className="pillar-card">
+            <div className="pillar-card flex-1 flex flex-col justify-center">
               <div className="flex items-center gap-4 mb-4">
                 <div className="w-12 h-12 rounded-xl bg-nuage-cyan/20 flex items-center justify-center">
                   <GitBranch className="w-6 h-6 text-nuage-cyan" />
@@ -48,7 +48,7 @@ const Slide07KiroIntro = () => {
               </p>
             </div>
 
-            <div className="pillar-card">
+            <div className="pillar-card flex-1 flex flex-col justify-center">
               <div className="flex items-center gap-4 mb-4">
                 <div className="w-12 h-12 rounded-xl bg-nuage-gold/20 flex items-center justify-center">
                   <CheckCircle className="w-6 h-6 text-nuage-gold" />
@@ -62,10 +62,10 @@ const Slide07KiroIntro = () => {
             </div>
           </div>
 
-          <div className="opacity-0 animate-slide-in-right delay-400">
-            <div className="relative">
+          <div className="opacity-0 animate-slide-in-right delay-400 flex">
+            <div className="relative flex-1 flex">
               <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-nuage-cyan/20 rounded-3xl blur-3xl" />
-              <div className="relative pillar-card p-8 text-center">
+              <div className="relative pillar-card p-8 text-center flex-1 flex flex-col justify-center">
                 <div className="w-24 h-24 rounded-3xl bg-gradient-to-br from-primary to-nuage-cyan flex items-center justify-center mx-auto mb-6 animate-float">
                   <Sparkles className="w-12 h-12 text-foreground" />
                 </div>

@@ -57,8 +57,8 @@ const SlideDadosDiferencial = () => {
                   <p className="text-foreground text-sm">"Qual foi a taxa de churn dos clientes premium do segmento varejo no Q3?"</p>
                 </div>
               </div>
-              <div className="card-glass p-6 rounded-xl h-[200px] border border-nuage-cyan/30">
-                <div className="grid grid-cols-2 gap-3 h-full">
+              <div className="card-glass p-6 rounded-xl h-[200px] border border-nuage-cyan/30 flex items-center justify-center">
+                <div className="grid grid-cols-2 gap-3">
                   <div className="bg-nuage-cyan/10 rounded-lg p-3 flex flex-col items-center justify-center">
                     <TrendingUp className="w-8 h-8 text-nuage-cyan mb-2" />
                     <span className="text-xs text-muted-foreground">Analytics</span>

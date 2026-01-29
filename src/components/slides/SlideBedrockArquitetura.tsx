@@ -33,16 +33,17 @@ const SlideBedrockArquitetura = () => {
   };
 
   // Posições da partícula ajustadas para seguir exatamente as linhas SVG
+  // Coordenadas baseadas no viewBox 0 0 400 320
   const getParticlePosition = () => {
     switch (flowStep) {
-      case 0: return { left: '60px', top: '160px' };      // App
-      case 1: return { left: '140px', top: '160px' };     // Gateway
-      case 2: return { left: '220px', top: '160px' };     // Lambda
-      case 3: return { left: '340px', top: '70px' };      // Bedrock
-      case 4: return { left: '340px', top: '250px' };     // Database
-      case 5: return { left: '220px', top: '160px' };     // Volta pro Lambda
-      case 6: return { left: '60px', top: '160px' };      // Volta pro App
-      default: return { left: '60px', top: '160px' };
+      case 0: return { x: 60, y: 160 };       // App - início
+      case 1: return { x: 155, y: 160 };      // Gateway - meio
+      case 2: return { x: 237, y: 160 };      // Lambda - centro
+      case 3: return { x: 340, y: 70 };       // Bedrock - topo
+      case 4: return { x: 340, y: 250 };      // Database - base
+      case 5: return { x: 237, y: 160 };      // Volta pro Lambda
+      case 6: return { x: 60, y: 160 };       // Volta pro App
+      default: return { x: 60, y: 160 };
     }
   };
 
@@ -248,17 +249,19 @@ const SlideBedrockArquitetura = () => {
                   <p className="text-xs text-center mt-2 font-mono text-muted-foreground">DynamoDB</p>
                 </div>
 
-                {/* Partícula animada */}
-                <div 
-                  className="absolute w-4 h-4 rounded-full transition-all duration-1000 z-20"
-                  style={{
-                    background: flowStep === 6 ? '#10B981' : '#FF007A',
-                    boxShadow: `0 0 20px 4px ${flowStep === 6 ? '#10B981' : '#FF007A'}`,
-                    left: particlePos.left,
-                    top: particlePos.top,
-                    transform: 'translate(-50%, -50%)',
-                  }}
-                />
+                {/* Partícula animada dentro do SVG */}
+                <svg className="absolute inset-0 w-full h-full pointer-events-none z-20" viewBox="0 0 400 320" preserveAspectRatio="xMidYMid meet">
+                  <circle
+                    cx={particlePos.x}
+                    cy={particlePos.y}
+                    r="8"
+                    fill={flowStep === 6 ? '#10B981' : '#FF007A'}
+                    className="transition-all duration-1000"
+                    style={{
+                      filter: `drop-shadow(0 0 12px ${flowStep === 6 ? '#10B981' : '#FF007A'}) drop-shadow(0 0 20px ${flowStep === 6 ? '#10B981' : '#FF007A'})`,
+                    }}
+                  />
+                </svg>
               </div>
 
               {/* Status indicator */}
