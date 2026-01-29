@@ -22,13 +22,10 @@ const Slide09KiroVsCopilot = () => {
 
       <div className="slide-content relative z-10">
         <div className="text-center mb-12">
-          <span className="inline-block px-4 py-2 rounded-full card-glass text-sm font-medium text-muted-foreground mb-4 opacity-0 animate-fade-in">
-            Módulo 3 • Amazon Kiro
-          </span>
-          <h2 className="text-4xl md:text-5xl font-black tracking-tight mb-4 opacity-0 animate-fade-in-up delay-100">
+          <h2 className="text-4xl md:text-5xl font-black tracking-tight mb-4 opacity-0 animate-fade-in-up">
             Kiro vs <span className="text-muted-foreground">GitHub Copilot</span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto opacity-0 animate-fade-in-up delay-200">
+          <p className="text-xl text-muted-foreground max-w-2xl mx-auto opacity-0 animate-fade-in-up delay-100">
             Comparativo de funcionalidades e preço
           </p>
         </div>

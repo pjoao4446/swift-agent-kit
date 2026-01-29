@@ -5,7 +5,7 @@ const SlideAWSSimplificaNovo = () => {
   const layers = [
     {
       title: "APLICAÇÕES PARA AUMENTAR PRODUTIVIDADE",
-      services: "Amazon Q Business, Developer, For Quicksight, For Amazon Connect",
+      services: "Amazon Q, Amazon Quick Suite, Amazon Kiro",
       subtitle: "INSIGHT E AUTOMAÇÃO",
       color: "bg-nuage-cyan",
       icon: MessageSquare,

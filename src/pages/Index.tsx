@@ -20,14 +20,19 @@ import SlideBedrockModelos from "@/components/slides/SlideBedrockModelos";
 import SlideBedrockEscolha from "@/components/slides/SlideBedrockEscolha";
 import SlideBedrockCustomizacao from "@/components/slides/SlideBedrockCustomizacao";
 import SlideBedrockArquitetura from "@/components/slides/SlideBedrockArquitetura";
+import SlideCoverNovidades2026 from "@/components/slides/SlideCoverNovidades2026";
+import SlideCoverKiro from "@/components/slides/SlideCoverKiro";
 import Slide07KiroIntro from "@/components/slides/Slide07KiroIntro";
 import Slide08KiroUseCases from "@/components/slides/Slide08KiroUseCases";
 import Slide09KiroVsCopilot from "@/components/slides/Slide09KiroVsCopilot";
 import Slide10KiroVsCursor from "@/components/slides/Slide10KiroVsCursor";
+import SlideCoverQuickSuite from "@/components/slides/SlideCoverQuickSuite";
 import Slide11QuickSuiteCapabilities from "@/components/slides/Slide11QuickSuiteCapabilities";
 import Slide12Spaces from "@/components/slides/Slide12Spaces";
+import SlideQuickSuiteIntegracoes from "@/components/slides/SlideQuickSuiteIntegracoes";
 import Slide13BrowserExtension from "@/components/slides/Slide13BrowserExtension";
 import Slide14QuickSuiteDifferentials from "@/components/slides/Slide14QuickSuiteDifferentials";
+import SlideCoverAgentCore from "@/components/slides/SlideCoverAgentCore";
 import Slide15AgentCoreIntro from "@/components/slides/Slide15AgentCoreIntro";
 import Slide16SevenPillars from "@/components/slides/Slide16SevenPillars";
 import Slide17TechnicalDetail from "@/components/slides/Slide17TechnicalDetail";
@@ -59,17 +64,23 @@ const slides = [
   SlideBedrockEscolha,
   SlideBedrockCustomizacao,
   SlideBedrockArquitetura,
+  // Capa Novidades 2026
+  SlideCoverNovidades2026,
   // Módulo 4: Amazon Kiro
+  SlideCoverKiro,
   Slide07KiroIntro,
   Slide08KiroUseCases,
   Slide09KiroVsCopilot,
   Slide10KiroVsCursor,
   // Módulo 5: Quick Suite
+  SlideCoverQuickSuite,
   Slide11QuickSuiteCapabilities,
   Slide12Spaces,
+  SlideQuickSuiteIntegracoes,
   Slide13BrowserExtension,
   Slide14QuickSuiteDifferentials,
   // Módulo 6: AgentCore
+  SlideCoverAgentCore,
   Slide15AgentCoreIntro,
   Slide16SevenPillars,
   Slide17TechnicalDetail,

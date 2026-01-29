@@ -12,11 +12,9 @@ const Slide20ThankYou = () => {
       </div>
 
       <div className="slide-content relative z-10 text-center">
-        <div className="opacity-0 animate-fade-in-up">
-          <span className="inline-block px-4 py-2 rounded-full card-glass text-sm font-medium text-muted-foreground mb-8">
-            Workshop Finalizado
-          </span>
-        </div>
+        <h2 className="text-5xl md:text-7xl lg:text-8xl font-black tracking-tighter mb-6 opacity-0 animate-fade-in-up">
+          <span className="text-gradient-magenta">Obrigado!</span>
+        </h2>
 
         <h2 className="text-5xl md:text-7xl lg:text-8xl font-black tracking-tighter mb-6 opacity-0 animate-fade-in-up delay-100">
           <span className="text-gradient-magenta">Obrigado!</span>

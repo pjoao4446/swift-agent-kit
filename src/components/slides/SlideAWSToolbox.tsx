@@ -9,10 +9,10 @@ const SlideAWSToolbox = () => {
     { name: "Rekognition", description: "Visão computacional", icon: Eye, color: "bg-nuage-cyan" },
     { name: "Comprehend", description: "NLP & Análise", icon: MessageCircle, color: "bg-primary" },
     { name: "Translate", description: "Tradução neural", icon: Languages, color: "bg-nuage-gold" },
-    { name: "Lex", description: "Chatbots", icon: Bot, color: "bg-nuage-cyan" },
-    { name: "SageMaker", description: "ML Platform", icon: Brain, color: "bg-primary" },
-    { name: "Bedrock", description: "Modelos fundacionais", icon: Layers, color: "bg-nuage-gold" },
-    { name: "Kiro", description: "IDE agêntico", icon: Code, color: "bg-primary" },
+    { name: "SageMaker", description: "ML Platform", icon: Brain, color: "bg-nuage-cyan" },
+    { name: "Bedrock", description: "Modelos fundacionais", icon: Layers, color: "bg-primary" },
+    { name: "Quick Suite", description: "BI & Automação", icon: Bot, color: "bg-nuage-gold" },
+    { name: "Kiro", description: "IDE agêntico", icon: Code, color: "bg-nuage-cyan" },
   ];
 
   return (

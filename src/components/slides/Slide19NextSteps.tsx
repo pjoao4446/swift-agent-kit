@@ -39,13 +39,10 @@ const Slide19NextSteps = () => {
 
       <div className="slide-content relative z-10">
         <div className="text-center mb-16">
-          <span className="inline-block px-4 py-2 rounded-full card-glass text-sm font-medium text-muted-foreground mb-4 opacity-0 animate-fade-in">
-            Módulo 6 • Encerramento
-          </span>
-          <h2 className="text-4xl md:text-6xl font-black tracking-tight mb-4 opacity-0 animate-fade-in-up delay-100">
+          <h2 className="text-4xl md:text-6xl font-black tracking-tight mb-4 opacity-0 animate-fade-in-up">
             Próximos <span className="text-gradient-magenta">Passos</span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto opacity-0 animate-fade-in-up delay-200">
+          <p className="text-xl text-muted-foreground max-w-2xl mx-auto opacity-0 animate-fade-in-up delay-100">
             Como implementar com a NuageIT
           </p>
         </div>
@@ -74,8 +71,8 @@ const Slide19NextSteps = () => {
           </div>
 
           <div className="mt-12 text-center opacity-0 animate-fade-in-up delay-700">
-            <button className="px-8 py-4 rounded-full bg-primary text-primary-foreground font-bold text-lg hover:scale-105 transition-transform glow-magenta">
-              Agendar Reunião
+            <button className="px-10 py-5 rounded-full bg-gradient-to-r from-primary to-nuage-cyan text-primary-foreground font-bold text-lg hover:scale-105 transition-transform glow-magenta">
+              Comece a Jornada para Transformar seu Negócio com IA
             </button>
           </div>
         </div>

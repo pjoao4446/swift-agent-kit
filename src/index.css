@@ -91,6 +91,13 @@
     background-clip: text;
   }
 
+  .text-gradient-cyan {
+    background: linear-gradient(90deg, hsl(185, 100%, 50%) 0%, hsl(200, 100%, 60%) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
   .glow-magenta {
     box-shadow: var(--shadow-glow);
   }
