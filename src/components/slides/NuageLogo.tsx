@@ -1,13 +1,16 @@
+import nuageLogo from "@/assets/nuage-logo.png";
+
 interface NuageLogoProps {
   className?: string;
 }
 
 const NuageLogo = ({ className = "" }: NuageLogoProps) => {
   return (
-    <div className={`flex items-center gap-1 ${className}`}>
-      <span className="text-2xl font-black tracking-tight text-foreground">NUAGE</span>
-      <span className="text-2xl font-black tracking-tight text-primary">IT</span>
-    </div>
+    <img 
+      src={nuageLogo} 
+      alt="NuageIT" 
+      className={`h-8 w-auto ${className}`}
+    />
   );
 };
 
