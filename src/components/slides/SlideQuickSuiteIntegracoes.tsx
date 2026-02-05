@@ -1,37 +1,35 @@
 import NuageLogo from "./NuageLogo";
 import { 
-  FileText, 
-  Cloud, 
-  Database, 
-  MessageSquare, 
-  Mail, 
-  Users, 
-  Calendar,
   Folder,
   Globe,
   Shield,
   Workflow,
-  BarChart3,
   Search,
-  Bot
+  Calendar
 } from "lucide-react";
+
+// Import AWS service icons
+import bedrockIcon from "@/assets/aws-icons/bedrock.png";
+
+// Third-party logos would need to be added separately
+// For now, using placeholders for non-AWS services
 
 const SlideQuickSuiteIntegracoes = () => {
   const integrations = [
-    { name: "Amazon S3", description: "Armazenamento de objetos", icon: Cloud },
-    { name: "Amazon RDS", description: "Bancos de dados relacionais", icon: Database },
-    { name: "Amazon Redshift", description: "Data warehouse", icon: BarChart3 },
+    { name: "Amazon S3", description: "Armazenamento de objetos", isAws: true, initial: "S3" },
+    { name: "Amazon RDS", description: "Bancos de dados relacionais", isAws: true, initial: "RDS" },
+    { name: "Amazon Redshift", description: "Data warehouse", isAws: true, initial: "RS" },
     { name: "Amazon Athena", description: "Query em S3", icon: Search },
     { name: "Microsoft SharePoint", description: "Documentos corporativos", icon: Folder },
-    { name: "Microsoft 365", description: "Office apps e dados", icon: FileText },
-    { name: "Slack", description: "Mensageria corporativa", icon: MessageSquare },
-    { name: "Salesforce", description: "CRM e vendas", icon: Users },
+    { name: "Microsoft 365", description: "Office apps e dados", initial: "365" },
+    { name: "Slack", description: "Mensageria corporativa", initial: "S" },
+    { name: "Salesforce", description: "CRM e vendas", initial: "SF" },
     { name: "ServiceNow", description: "ITSM e workflows", icon: Workflow },
     { name: "Jira", description: "Gestão de projetos", icon: Calendar },
     { name: "Confluence", description: "Wiki e documentação", icon: Globe },
-    { name: "Google Workspace", description: "Drive, Docs, Sheets", icon: Mail },
+    { name: "Google Workspace", description: "Drive, Docs, Sheets", initial: "G" },
     { name: "IAM Identity Center", description: "SSO corporativo", icon: Shield },
-    { name: "Amazon Bedrock", description: "Modelos fundacionais", icon: Bot },
+    { name: "Amazon Bedrock", description: "Modelos fundacionais", awsIcon: bedrockIcon },
   ];
 
   return (
@@ -60,8 +58,14 @@ const SlideQuickSuiteIntegracoes = () => {
                 className="pillar-card text-center py-4 px-2 opacity-0 animate-scale-in"
                 style={{ animationDelay: `${0.1 + index * 0.03}s` }}
               >
-                <div className="w-10 h-10 rounded-lg bg-nuage-cyan/20 flex items-center justify-center mx-auto mb-2">
-                  <integration.icon className="w-5 h-5 text-nuage-cyan" />
+                <div className="w-10 h-10 rounded-lg bg-nuage-cyan/20 flex items-center justify-center mx-auto mb-2 overflow-hidden">
+                  {integration.awsIcon ? (
+                    <img src={integration.awsIcon} alt={integration.name} className="w-full h-full object-cover" />
+                  ) : integration.icon ? (
+                    <integration.icon className="w-5 h-5 text-nuage-cyan" />
+                  ) : (
+                    <span className="text-xs font-bold text-nuage-cyan">{integration.initial}</span>
+                  )}
                 </div>
                 <h3 className="font-bold text-xs mb-1 truncate">{integration.name}</h3>
                 <p className="text-xs text-muted-foreground truncate">{integration.description}</p>
