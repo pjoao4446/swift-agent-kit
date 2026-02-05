@@ -1,8 +1,4 @@
 import NuageLogo from "./NuageLogo";
-import { 
-  Globe,
-  Shield
-} from "lucide-react";
 
 // Import AWS service icons
 import bedrockIcon from "@/assets/aws-icons/bedrock.png";
@@ -16,6 +12,9 @@ import slackIcon from "@/assets/integrations/slack.png";
 import salesforceIcon from "@/assets/integrations/salesforce.png";
 import servicenowIcon from "@/assets/integrations/servicenow.png";
 import jiraIcon from "@/assets/integrations/jira.png";
+import confluenceIcon from "@/assets/integrations/confluence.png";
+import googleIcon from "@/assets/integrations/google.png";
+import iamIcon from "@/assets/integrations/iam.png";
 
 const SlideQuickSuiteIntegracoes = () => {
   const integrations = [
@@ -29,9 +28,9 @@ const SlideQuickSuiteIntegracoes = () => {
     { name: "Salesforce", description: "CRM e vendas", icon: salesforceIcon },
     { name: "ServiceNow", description: "ITSM e workflows", icon: servicenowIcon },
     { name: "Jira", description: "Gestão de projetos", icon: jiraIcon },
-    { name: "Confluence", description: "Wiki e documentação", lucideIcon: Globe },
-    { name: "Google Workspace", description: "Drive, Docs, Sheets", initial: "G" },
-    { name: "IAM Identity Center", description: "SSO corporativo", lucideIcon: Shield },
+    { name: "Confluence", description: "Wiki e documentação", icon: confluenceIcon },
+    { name: "Google Workspace", description: "Drive, Docs, Sheets", icon: googleIcon },
+    { name: "IAM Identity Center", description: "SSO corporativo", icon: iamIcon },
     { name: "Amazon Bedrock", description: "Modelos fundacionais", icon: bedrockIcon },
   ];
 
@@ -62,13 +61,7 @@ const SlideQuickSuiteIntegracoes = () => {
                 style={{ animationDelay: `${0.1 + index * 0.03}s` }}
               >
                 <div className="w-10 h-10 rounded-lg bg-nuage-cyan/20 flex items-center justify-center mx-auto mb-2 overflow-hidden">
-                  {integration.icon ? (
-                    <img src={integration.icon} alt={integration.name} className="w-full h-full object-cover" />
-                  ) : integration.lucideIcon ? (
-                    <integration.lucideIcon className="w-5 h-5 text-nuage-cyan" />
-                  ) : (
-                    <span className="text-xs font-bold text-nuage-cyan">{integration.initial}</span>
-                  )}
+                  <img src={integration.icon} alt={integration.name} className="w-full h-full object-cover" />
                 </div>
                 <h3 className="font-bold text-xs mb-1 truncate">{integration.name}</h3>
                 <p className="text-xs text-muted-foreground truncate">{integration.description}</p>
