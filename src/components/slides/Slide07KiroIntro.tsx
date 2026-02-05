@@ -1,5 +1,6 @@
 import NuageLogo from "./NuageLogo";
-import { FileCode, GitBranch, CheckCircle, Sparkles } from "lucide-react";
+import { FileCode, GitBranch, CheckCircle } from "lucide-react";
+import kiroIcon from "@/assets/aws-icons/kiro.jpg";
 
 const Slide07KiroIntro = () => {
   return (
@@ -66,8 +67,8 @@ const Slide07KiroIntro = () => {
             <div className="relative flex-1 flex">
               <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-nuage-cyan/20 rounded-3xl blur-3xl" />
               <div className="relative pillar-card p-8 text-center flex-1 flex flex-col justify-center">
-                <div className="w-24 h-24 rounded-3xl bg-gradient-to-br from-primary to-nuage-cyan flex items-center justify-center mx-auto mb-6 animate-float">
-                  <Sparkles className="w-12 h-12 text-foreground" />
+                <div className="w-24 h-24 rounded-3xl overflow-hidden mx-auto mb-6 animate-float">
+                  <img src={kiroIcon} alt="Kiro" className="w-full h-full object-cover" />
                 </div>
                 <h3 className="text-3xl font-black mb-4">
                   <span className="text-gradient-magenta">Kiro</span> IDE
