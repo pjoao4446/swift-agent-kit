@@ -1,16 +1,24 @@
 import NuageLogo from "./NuageLogo";
 import { MoreHorizontal } from "lucide-react";
 
+// Import model provider logos
+import mistralLogo from "@/assets/model-providers/mistral.png";
+import stabilityLogo from "@/assets/model-providers/stability.png";
+import ai21Logo from "@/assets/model-providers/ai21labs.png";
+import amazonLogo from "@/assets/model-providers/amazon.png";
+import cohereLogo from "@/assets/model-providers/cohere.png";
+import metaLogo from "@/assets/model-providers/meta.png";
+
 const SlideBedrockModelos = () => {
   const models = [
-    { name: "Claude", provider: "Anthropic", color: "bg-nuage-cyan" },
-    { name: "Titan", provider: "Amazon", color: "bg-nuage-gold" },
-    { name: "Llama", provider: "Meta", color: "bg-primary" },
-    { name: "Command", provider: "Cohere", color: "bg-nuage-cyan" },
-    { name: "Stable Diffusion", provider: "Stability AI", color: "bg-nuage-gold" },
-    { name: "Mistral", provider: "Mistral AI", color: "bg-primary" },
-    { name: "Jamba", provider: "AI21 Labs", color: "bg-nuage-cyan" },
-    { name: "Nova", provider: "Amazon", color: "bg-nuage-gold" },
+    { name: "Claude", provider: "Anthropic", logo: null, initial: "C", color: "bg-nuage-cyan" },
+    { name: "Titan", provider: "Amazon", logo: amazonLogo },
+    { name: "Llama", provider: "Meta", logo: metaLogo },
+    { name: "Command", provider: "Cohere", logo: cohereLogo },
+    { name: "Stable Diffusion", provider: "Stability AI", logo: stabilityLogo },
+    { name: "Mistral", provider: "Mistral AI", logo: mistralLogo },
+    { name: "Jamba", provider: "AI21 Labs", logo: ai21Logo },
+    { name: "Nova", provider: "Amazon", logo: amazonLogo },
   ];
 
   return (
@@ -39,8 +47,16 @@ const SlideBedrockModelos = () => {
                 className="pillar-card text-center py-4 opacity-0 animate-scale-in"
                 style={{ animationDelay: `${0.15 + index * 0.05}s` }}
               >
-                <div className={`w-12 h-12 rounded-xl ${model.color} flex items-center justify-center mx-auto mb-3`}>
-                  <span className="text-xl font-black text-background">{model.name.charAt(0)}</span>
+                <div className="w-16 h-12 rounded-xl bg-white flex items-center justify-center mx-auto mb-3 p-2">
+                  {model.logo ? (
+                    <img 
+                      src={model.logo} 
+                      alt={model.provider} 
+                      className="w-full h-full object-contain"
+                    />
+                  ) : (
+                    <span className="text-xl font-black text-primary">{model.initial}</span>
+                  )}
                 </div>
                 <h3 className="text-sm font-bold mb-1">{model.name}</h3>
                 <p className="text-xs text-muted-foreground">{model.provider}</p>
@@ -52,7 +68,7 @@ const SlideBedrockModelos = () => {
               className="pillar-card text-center py-4 opacity-0 animate-scale-in flex flex-col items-center justify-center"
               style={{ animationDelay: `${0.15 + models.length * 0.05}s` }}
             >
-              <div className="w-12 h-12 rounded-xl bg-secondary/50 flex items-center justify-center mx-auto mb-3">
+              <div className="w-16 h-12 rounded-xl bg-secondary/50 flex items-center justify-center mx-auto mb-3">
                 <MoreHorizontal className="w-6 h-6 text-muted-foreground" />
               </div>
               <h3 className="text-sm font-bold mb-1">E mais...</h3>
@@ -64,7 +80,7 @@ const SlideBedrockModelos = () => {
               className="pillar-card text-center py-4 opacity-0 animate-scale-in bg-secondary/20 border-dashed"
               style={{ animationDelay: `${0.15 + (models.length + 1) * 0.05}s` }}
             >
-              <div className="w-12 h-12 rounded-xl bg-muted/30 flex items-center justify-center mx-auto mb-3">
+              <div className="w-16 h-12 rounded-xl bg-muted/30 flex items-center justify-center mx-auto mb-3">
                 <span className="text-xl font-black text-muted-foreground/50">?</span>
               </div>
               <h3 className="text-sm font-bold mb-1 text-muted-foreground/50">Novo</h3>
