@@ -20,31 +20,16 @@ import SlideBedrockModelos from "@/components/slides/SlideBedrockModelos";
 import SlideBedrockEscolha from "@/components/slides/SlideBedrockEscolha";
 import SlideBedrockCustomizacao from "@/components/slides/SlideBedrockCustomizacao";
 import SlideBedrockArquitetura from "@/components/slides/SlideBedrockArquitetura";
-import SlideVideoBedrockDemo1 from "@/components/slides/SlideVideoBedrockDemo1";
-import SlideVideoBedrockDemo2 from "@/components/slides/SlideVideoBedrockDemo2";
 import SlideCoverNovidades2026 from "@/components/slides/SlideCoverNovidades2026";
 import SlideCoverKiro from "@/components/slides/SlideCoverKiro";
 import Slide07KiroIntro from "@/components/slides/Slide07KiroIntro";
 import Slide08KiroUseCases from "@/components/slides/Slide08KiroUseCases";
-import Slide09KiroVsCopilot from "@/components/slides/Slide09KiroVsCopilot";
-import Slide10KiroVsCursor from "@/components/slides/Slide10KiroVsCursor";
-import SlideVideoKiroDemo1 from "@/components/slides/SlideVideoKiroDemo1";
-import SlideVideoKiroDemo2 from "@/components/slides/SlideVideoKiroDemo2";
 import SlideCoverQuickSuite from "@/components/slides/SlideCoverQuickSuite";
 import Slide11QuickSuiteCapabilities from "@/components/slides/Slide11QuickSuiteCapabilities";
 import Slide12Spaces from "@/components/slides/Slide12Spaces";
 import SlideQuickSuiteIntegracoes from "@/components/slides/SlideQuickSuiteIntegracoes";
 import Slide13BrowserExtension from "@/components/slides/Slide13BrowserExtension";
 import Slide14QuickSuiteDifferentials from "@/components/slides/Slide14QuickSuiteDifferentials";
-import SlideVideoQuickSuiteDemo1 from "@/components/slides/SlideVideoQuickSuiteDemo1";
-import SlideVideoQuickSuiteDemo2 from "@/components/slides/SlideVideoQuickSuiteDemo2";
-import SlideCoverAgentCore from "@/components/slides/SlideCoverAgentCore";
-import Slide15AgentCoreIntro from "@/components/slides/Slide15AgentCoreIntro";
-import Slide16SevenPillars from "@/components/slides/Slide16SevenPillars";
-import Slide17TechnicalDetail from "@/components/slides/Slide17TechnicalDetail";
-import Slide18UseCases from "@/components/slides/Slide18UseCases";
-import SlideVideoAgentCoreDemo1 from "@/components/slides/SlideVideoAgentCoreDemo1";
-import SlideVideoAgentCoreDemo2 from "@/components/slides/SlideVideoAgentCoreDemo2";
 import Slide19NextSteps from "@/components/slides/Slide19NextSteps";
 import Slide20ThankYou from "@/components/slides/Slide20ThankYou";
 
@@ -72,20 +57,12 @@ const slides = [
   SlideBedrockEscolha,
   SlideBedrockCustomizacao,
   SlideBedrockArquitetura,
-  // Demos Bedrock (após "Crie suas próprias soluções")
-  SlideVideoBedrockDemo1,
-  SlideVideoBedrockDemo2,
   // Capa Novidades 2026
   SlideCoverNovidades2026,
   // Módulo 4: Amazon Kiro
   SlideCoverKiro,
   Slide07KiroIntro,
   Slide08KiroUseCases,
-  Slide09KiroVsCopilot,
-  Slide10KiroVsCursor,
-  // Demos Kiro (antes da capa QuickSuite)
-  SlideVideoKiroDemo1,
-  SlideVideoKiroDemo2,
   // Módulo 5: Quick Suite
   SlideCoverQuickSuite,
   Slide11QuickSuiteCapabilities,
@@ -93,19 +70,7 @@ const slides = [
   SlideQuickSuiteIntegracoes,
   Slide13BrowserExtension,
   Slide14QuickSuiteDifferentials,
-  // Demos QuickSuite (antes da capa AgentCore)
-  SlideVideoQuickSuiteDemo1,
-  SlideVideoQuickSuiteDemo2,
-  // Módulo 6: AgentCore
-  SlideCoverAgentCore,
-  Slide15AgentCoreIntro,
-  Slide16SevenPillars,
-  Slide17TechnicalDetail,
-  Slide18UseCases,
-  // Demos AgentCore (antes de Próximos Passos)
-  SlideVideoAgentCoreDemo1,
-  SlideVideoAgentCoreDemo2,
-  // Módulo 7: Encerramento
+  // Módulo 6: Encerramento
   Slide19NextSteps,
   Slide20ThankYou,
 ];
