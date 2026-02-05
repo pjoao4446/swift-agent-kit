@@ -1,5 +1,6 @@
 import NuageLogo from "./NuageLogo";
-import { BarChart3, Sparkles } from "lucide-react";
+import { Sparkles } from "lucide-react";
+import quickSuiteIcon from "@/assets/aws-icons/quicksuite.png";
 
 const SlideCoverQuickSuite = () => {
   return (
@@ -14,8 +15,8 @@ const SlideCoverQuickSuite = () => {
       <div className="slide-content relative z-10 flex flex-col items-center justify-center text-center">
         <div className="relative mb-8 opacity-0 animate-fade-in-up">
           <div className="absolute inset-0 blur-3xl bg-nuage-cyan/40 rounded-full scale-150" />
-          <div className="relative w-28 h-28 rounded-3xl bg-gradient-to-br from-nuage-cyan via-nuage-cyan to-primary flex items-center justify-center animate-float">
-            <BarChart3 className="w-14 h-14 text-foreground" />
+          <div className="relative w-28 h-28 rounded-3xl overflow-hidden animate-float">
+            <img src={quickSuiteIcon} alt="Quick Suite" className="w-full h-full object-contain" />
           </div>
         </div>
 

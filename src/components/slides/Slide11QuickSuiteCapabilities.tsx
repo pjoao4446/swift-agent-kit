@@ -1,5 +1,6 @@
 import NuageLogo from "./NuageLogo";
 import { Eye, Workflow, Bot, Search, FlaskConical } from "lucide-react";
+import quickSuiteIcon from "@/assets/aws-icons/quicksuite.png";
 
 const Slide11QuickSuiteCapabilities = () => {
   const capabilities = [
@@ -32,6 +33,7 @@ const Slide11QuickSuiteCapabilities = () => {
       name: "Research",
       description: "Análise e insights automatizados",
       color: "bg-nuage-cyan",
+      useQuickSuiteIcon: true,
     },
   ];
 
@@ -71,7 +73,8 @@ const Slide11QuickSuiteCapabilities = () => {
           </div>
 
           <div className="mt-12 text-center opacity-0 animate-fade-in-up delay-700">
-            <div className="inline-block pillar-card px-8 py-4">
+            <div className="inline-flex items-center gap-4 pillar-card px-8 py-4">
+              <img src={quickSuiteIcon} alt="Quick Suite" className="w-10 h-10 object-contain" />
               <p className="text-lg">
                 Todas integradas via <span className="text-gradient-gold font-bold">Amazon Q</span> para uma experiência unificada
               </p>
