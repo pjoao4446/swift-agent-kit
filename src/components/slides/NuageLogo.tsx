@@ -9,7 +9,7 @@ const NuageLogo = ({ className = "" }: NuageLogoProps) => {
     <img 
       src={nuageLogo} 
       alt="NuageIT" 
-      className={`h-8 w-auto ${className}`}
+      className={`h-16 w-auto ${className}`}
     />
   );
 };
