@@ -1,6 +1,12 @@
 import NuageLogo from "./NuageLogo";
-import { Smartphone, Shield, Cpu, Brain, Database, Cloud, ArrowRight, Zap } from "lucide-react";
+import { Smartphone, ArrowRight, Zap, Cloud } from "lucide-react";
 import { useEffect, useState } from "react";
+
+// Import AWS service icons
+import apiGatewayIcon from "@/assets/aws-icons/api-gateway.jpg";
+import lambdaIcon from "@/assets/aws-icons/lambda.png";
+import bedrockIcon from "@/assets/aws-icons/bedrock.png";
+import dynamodbIcon from "@/assets/aws-icons/dynamodb.png";
 
 const SlideBedrockArquitetura = () => {
   const [flowStep, setFlowStep] = useState(0);
@@ -182,12 +188,12 @@ const SlideBedrockArquitetura = () => {
                   onMouseEnter={() => setHoveredComponent('gateway')}
                   onMouseLeave={() => setHoveredComponent(null)}
                 >
-                  <div className={`w-14 h-14 rounded-full flex items-center justify-center transition-all duration-300 ${
+                  <div className={`w-14 h-14 rounded-full flex items-center justify-center transition-all duration-300 overflow-hidden ${
                     isActive('gateway') 
-                      ? 'bg-nuage-gold shadow-lg shadow-nuage-gold/50' 
-                      : 'bg-nuage-gold/20 border border-nuage-gold/30'
+                      ? 'shadow-lg shadow-nuage-gold/50' 
+                      : 'border border-nuage-gold/30'
                   }`}>
-                    <Shield className="w-7 h-7 text-foreground" />
+                    <img src={apiGatewayIcon} alt="API Gateway" className="w-full h-full object-cover" />
                   </div>
                   <p className="text-xs text-center mt-2 font-mono text-muted-foreground">API GW</p>
                 </div>
@@ -199,12 +205,12 @@ const SlideBedrockArquitetura = () => {
                   onMouseEnter={() => setHoveredComponent('lambda')}
                   onMouseLeave={() => setHoveredComponent(null)}
                 >
-                  <div className={`w-16 h-16 rounded-xl flex items-center justify-center transition-all duration-300 ${
+                  <div className={`w-16 h-16 rounded-xl flex items-center justify-center transition-all duration-300 overflow-hidden ${
                     isActive('lambda') 
-                      ? 'bg-nuage-cyan shadow-lg shadow-nuage-cyan/50' 
-                      : 'bg-nuage-cyan/20 border border-nuage-cyan/30'
+                      ? 'shadow-lg shadow-nuage-cyan/50' 
+                      : 'border border-nuage-cyan/30'
                   }`}>
-                    <Cpu className="w-8 h-8 text-foreground" />
+                    <img src={lambdaIcon} alt="Lambda" className="w-full h-full object-cover" />
                   </div>
                   <p className="text-xs text-center mt-2 font-mono text-muted-foreground">Lambda</p>
                 </div>
@@ -216,12 +222,12 @@ const SlideBedrockArquitetura = () => {
                   onMouseEnter={() => setHoveredComponent('bedrock')}
                   onMouseLeave={() => setHoveredComponent(null)}
                 >
-                  <div className={`w-20 h-20 rounded-2xl flex items-center justify-center transition-all duration-300 relative ${
+                  <div className={`w-20 h-20 rounded-2xl flex items-center justify-center transition-all duration-300 relative overflow-hidden ${
                     isActive('bedrock') 
-                      ? 'bg-primary shadow-lg shadow-primary/50' 
-                      : 'bg-primary/20 border border-primary/30'
+                      ? 'shadow-lg shadow-primary/50' 
+                      : 'border border-primary/30'
                   }`}>
-                    <Brain className={`w-10 h-10 text-foreground ${isActive('bedrock') ? 'animate-pulse' : ''}`} />
+                    <img src={bedrockIcon} alt="Bedrock" className={`w-full h-full object-cover ${isActive('bedrock') ? 'animate-pulse' : ''}`} />
                     {isActive('bedrock') && (
                       <div className="absolute inset-0 rounded-2xl bg-primary/30 animate-ping" />
                     )}
@@ -236,12 +242,12 @@ const SlideBedrockArquitetura = () => {
                   onMouseEnter={() => setHoveredComponent('database')}
                   onMouseLeave={() => setHoveredComponent(null)}
                 >
-                  <div className={`w-16 h-16 rounded-xl flex items-center justify-center transition-all duration-300 ${
+                  <div className={`w-16 h-16 rounded-xl flex items-center justify-center transition-all duration-300 overflow-hidden ${
                     isActive('database') 
-                      ? 'bg-nuage-cyan shadow-lg shadow-nuage-cyan/50' 
-                      : 'bg-nuage-cyan/20 border border-nuage-cyan/30'
+                      ? 'shadow-lg shadow-nuage-cyan/50' 
+                      : 'border border-nuage-cyan/30'
                   }`}>
-                    <Database className="w-8 h-8 text-foreground" />
+                    <img src={dynamodbIcon} alt="DynamoDB" className="w-full h-full object-cover" />
                   </div>
                   <p className="text-xs text-center mt-2 font-mono text-muted-foreground">DynamoDB</p>
                 </div>
@@ -323,7 +329,7 @@ const SlideBedrockArquitetura = () => {
                   onMouseLeave={() => setHoveredComponent(null)}
                 >
                   <div className="flex items-center gap-4">
-                    <Shield className="w-6 h-6 text-nuage-gold" strokeWidth={1.5} />
+                    <img src={apiGatewayIcon} alt="API Gateway" className="w-8 h-8 rounded object-cover" />
                     <div>
                       <p className="font-mono text-sm text-foreground">AWS::ApiGateway</p>
                       <p className="text-xs text-muted-foreground">REST API • Auth • Rate Limiting</p>
@@ -348,7 +354,7 @@ const SlideBedrockArquitetura = () => {
                   onMouseLeave={() => setHoveredComponent(null)}
                 >
                   <div className="flex items-center gap-4">
-                    <Cpu className="w-6 h-6 text-nuage-cyan" strokeWidth={1.5} />
+                    <img src={lambdaIcon} alt="Lambda" className="w-8 h-8 rounded object-cover" />
                     <div>
                       <p className="font-mono text-sm text-foreground">AWS::Lambda</p>
                       <p className="text-xs text-muted-foreground">Orchestrator • Python/Node • Timeout: 30s</p>
@@ -369,7 +375,7 @@ const SlideBedrockArquitetura = () => {
                     onMouseLeave={() => setHoveredComponent(null)}
                   >
                     <div className="flex items-center gap-3">
-                      <Brain className="w-6 h-6 text-primary" strokeWidth={1.5} />
+                      <img src={bedrockIcon} alt="Bedrock" className="w-8 h-8 rounded object-cover" />
                       <div>
                         <p className="font-mono text-sm text-foreground">Bedrock</p>
                         <p className="text-xs text-muted-foreground">Claude-3.5</p>
@@ -388,7 +394,7 @@ const SlideBedrockArquitetura = () => {
                     onMouseLeave={() => setHoveredComponent(null)}
                   >
                     <div className="flex items-center gap-3">
-                      <Database className="w-6 h-6 text-nuage-cyan" strokeWidth={1.5} />
+                      <img src={dynamodbIcon} alt="DynamoDB" className="w-8 h-8 rounded object-cover" />
                       <div>
                         <p className="font-mono text-sm text-foreground">DynamoDB</p>
                         <p className="text-xs text-muted-foreground">User Data</p>

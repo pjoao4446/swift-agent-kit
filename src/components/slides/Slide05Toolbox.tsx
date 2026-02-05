@@ -1,43 +1,44 @@
 import NuageLogo from "./NuageLogo";
-import { Mic, Eye, MessageSquare, Brain, Image, FileText } from "lucide-react";
+
+// Import AWS service icons
+import transcribeIcon from "@/assets/aws-icons/transcribe.jpg";
+import rekognitionIcon from "@/assets/aws-icons/rekognition.png";
+import bedrockIcon from "@/assets/aws-icons/bedrock.png";
+import textractIcon from "@/assets/aws-icons/textract.png";
+import comprehendIcon from "@/assets/aws-icons/comprehend.png";
 
 const Slide05Toolbox = () => {
   const tools = [
     {
-      icon: Mic,
+      icon: transcribeIcon,
       name: "Transcribe",
       description: "Speech-to-Text automático com alta precisão",
-      color: "bg-primary/20 text-primary",
     },
     {
-      icon: Eye,
+      icon: rekognitionIcon,
       name: "Rekognition",
       description: "Análise de imagens e vídeos com ML",
-      color: "bg-nuage-cyan/20 text-nuage-cyan",
     },
     {
-      icon: Brain,
+      icon: bedrockIcon,
       name: "Bedrock",
       description: "Foundation Models gerenciados",
-      color: "bg-nuage-gold/20 text-nuage-gold",
     },
     {
-      icon: MessageSquare,
+      icon: null,
+      initial: "L",
       name: "Lex",
       description: "Chatbots conversacionais inteligentes",
-      color: "bg-primary/20 text-primary",
     },
     {
-      icon: Image,
+      icon: textractIcon,
       name: "Textract",
       description: "Extração de texto de documentos",
-      color: "bg-nuage-cyan/20 text-nuage-cyan",
     },
     {
-      icon: FileText,
+      icon: comprehendIcon,
       name: "Comprehend",
       description: "NLP e análise de sentimentos",
-      color: "bg-nuage-gold/20 text-nuage-gold",
     },
   ];
 
@@ -70,8 +71,18 @@ const Slide05Toolbox = () => {
               style={{ animationDelay: `${0.3 + index * 0.1}s` }}
             >
               <div className="flex items-start gap-4">
-                <div className={`w-14 h-14 rounded-xl ${tool.color} flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform`}>
-                  <tool.icon className="w-7 h-7" />
+                <div className="w-14 h-14 rounded-xl overflow-hidden flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
+                  {tool.icon ? (
+                    <img 
+                      src={tool.icon} 
+                      alt={tool.name} 
+                      className="w-full h-full object-cover"
+                    />
+                  ) : (
+                    <div className="w-full h-full bg-primary/20 flex items-center justify-center">
+                      <span className="text-xl font-bold text-primary">{tool.initial}</span>
+                    </div>
+                  )}
                 </div>
                 <div>
                   <h3 className="text-xl font-bold mb-2">{tool.name}</h3>
