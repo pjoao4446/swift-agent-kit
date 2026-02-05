@@ -1,35 +1,38 @@
 import NuageLogo from "./NuageLogo";
 import { 
-  Folder,
   Globe,
-  Shield,
-  Workflow,
-  Search,
-  Calendar
+  Shield
 } from "lucide-react";
 
 // Import AWS service icons
 import bedrockIcon from "@/assets/aws-icons/bedrock.png";
-
-// Third-party logos would need to be added separately
-// For now, using placeholders for non-AWS services
+import s3Icon from "@/assets/integrations/s3.png";
+import rdsIcon from "@/assets/integrations/rds.png";
+import redshiftIcon from "@/assets/integrations/redshift.png";
+import athenaIcon from "@/assets/integrations/athena.png";
+import sharepointIcon from "@/assets/integrations/sharepoint.png";
+import microsoft365Icon from "@/assets/integrations/microsoft365.png";
+import slackIcon from "@/assets/integrations/slack.png";
+import salesforceIcon from "@/assets/integrations/salesforce.png";
+import servicenowIcon from "@/assets/integrations/servicenow.png";
+import jiraIcon from "@/assets/integrations/jira.png";
 
 const SlideQuickSuiteIntegracoes = () => {
   const integrations = [
-    { name: "Amazon S3", description: "Armazenamento de objetos", isAws: true, initial: "S3" },
-    { name: "Amazon RDS", description: "Bancos de dados relacionais", isAws: true, initial: "RDS" },
-    { name: "Amazon Redshift", description: "Data warehouse", isAws: true, initial: "RS" },
-    { name: "Amazon Athena", description: "Query em S3", icon: Search },
-    { name: "Microsoft SharePoint", description: "Documentos corporativos", icon: Folder },
-    { name: "Microsoft 365", description: "Office apps e dados", initial: "365" },
-    { name: "Slack", description: "Mensageria corporativa", initial: "S" },
-    { name: "Salesforce", description: "CRM e vendas", initial: "SF" },
-    { name: "ServiceNow", description: "ITSM e workflows", icon: Workflow },
-    { name: "Jira", description: "Gestão de projetos", icon: Calendar },
-    { name: "Confluence", description: "Wiki e documentação", icon: Globe },
+    { name: "Amazon S3", description: "Armazenamento de objetos", icon: s3Icon },
+    { name: "Amazon RDS", description: "Bancos de dados relacionais", icon: rdsIcon },
+    { name: "Amazon Redshift", description: "Data warehouse", icon: redshiftIcon },
+    { name: "Amazon Athena", description: "Query em S3", icon: athenaIcon },
+    { name: "Microsoft SharePoint", description: "Documentos corporativos", icon: sharepointIcon },
+    { name: "Microsoft 365", description: "Office apps e dados", icon: microsoft365Icon },
+    { name: "Slack", description: "Mensageria corporativa", icon: slackIcon },
+    { name: "Salesforce", description: "CRM e vendas", icon: salesforceIcon },
+    { name: "ServiceNow", description: "ITSM e workflows", icon: servicenowIcon },
+    { name: "Jira", description: "Gestão de projetos", icon: jiraIcon },
+    { name: "Confluence", description: "Wiki e documentação", lucideIcon: Globe },
     { name: "Google Workspace", description: "Drive, Docs, Sheets", initial: "G" },
-    { name: "IAM Identity Center", description: "SSO corporativo", icon: Shield },
-    { name: "Amazon Bedrock", description: "Modelos fundacionais", awsIcon: bedrockIcon },
+    { name: "IAM Identity Center", description: "SSO corporativo", lucideIcon: Shield },
+    { name: "Amazon Bedrock", description: "Modelos fundacionais", icon: bedrockIcon },
   ];
 
   return (
@@ -59,10 +62,10 @@ const SlideQuickSuiteIntegracoes = () => {
                 style={{ animationDelay: `${0.1 + index * 0.03}s` }}
               >
                 <div className="w-10 h-10 rounded-lg bg-nuage-cyan/20 flex items-center justify-center mx-auto mb-2 overflow-hidden">
-                  {integration.awsIcon ? (
-                    <img src={integration.awsIcon} alt={integration.name} className="w-full h-full object-cover" />
-                  ) : integration.icon ? (
-                    <integration.icon className="w-5 h-5 text-nuage-cyan" />
+                  {integration.icon ? (
+                    <img src={integration.icon} alt={integration.name} className="w-full h-full object-cover" />
+                  ) : integration.lucideIcon ? (
+                    <integration.lucideIcon className="w-5 h-5 text-nuage-cyan" />
                   ) : (
                     <span className="text-xs font-bold text-nuage-cyan">{integration.initial}</span>
                   )}
