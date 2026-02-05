@@ -1,18 +1,29 @@
 import NuageLogo from "./NuageLogo";
-import { Mic, Volume2, FileText, Eye, MessageCircle, Languages, Bot, Brain, Layers, Code } from "lucide-react";
+
+// Import AWS service icons
+import transcribeIcon from "@/assets/aws-icons/transcribe.jpg";
+import pollyIcon from "@/assets/aws-icons/polly.png";
+import textractIcon from "@/assets/aws-icons/textract.png";
+import rekognitionIcon from "@/assets/aws-icons/rekognition.png";
+import comprehendIcon from "@/assets/aws-icons/comprehend.png";
+import translateIcon from "@/assets/aws-icons/translate.png";
+import sagemakerIcon from "@/assets/aws-icons/sagemaker.png";
+import bedrockIcon from "@/assets/aws-icons/bedrock.png";
+import quicksuiteIcon from "@/assets/aws-icons/quicksuite.png";
+import kiroIcon from "@/assets/aws-icons/kiro.jpg";
 
 const SlideAWSToolbox = () => {
   const services = [
-    { name: "Transcribe", description: "Speech-to-text", icon: Mic, color: "bg-nuage-cyan" },
-    { name: "Polly", description: "Text-to-speech", icon: Volume2, color: "bg-primary" },
-    { name: "Textract", description: "OCR inteligente", icon: FileText, color: "bg-nuage-gold" },
-    { name: "Rekognition", description: "Visão computacional", icon: Eye, color: "bg-nuage-cyan" },
-    { name: "Comprehend", description: "NLP & Análise", icon: MessageCircle, color: "bg-primary" },
-    { name: "Translate", description: "Tradução neural", icon: Languages, color: "bg-nuage-gold" },
-    { name: "SageMaker", description: "ML Platform", icon: Brain, color: "bg-nuage-cyan" },
-    { name: "Bedrock", description: "Modelos fundacionais", icon: Layers, color: "bg-primary" },
-    { name: "Quick Suite", description: "BI & Automação", icon: Bot, color: "bg-nuage-gold" },
-    { name: "Kiro", description: "IDE agêntico", icon: Code, color: "bg-nuage-cyan" },
+    { name: "Transcribe", description: "Speech-to-text", icon: transcribeIcon },
+    { name: "Polly", description: "Text-to-speech", icon: pollyIcon },
+    { name: "Textract", description: "OCR inteligente", icon: textractIcon },
+    { name: "Rekognition", description: "Visão computacional", icon: rekognitionIcon },
+    { name: "Comprehend", description: "NLP & Análise", icon: comprehendIcon },
+    { name: "Translate", description: "Tradução neural", icon: translateIcon },
+    { name: "SageMaker", description: "ML Platform", icon: sagemakerIcon },
+    { name: "Bedrock", description: "Modelos fundacionais", icon: bedrockIcon },
+    { name: "Quick Suite", description: "BI & Automação", icon: quicksuiteIcon },
+    { name: "Kiro", description: "IDE agêntico", icon: kiroIcon },
   ];
 
   return (
@@ -44,8 +55,12 @@ const SlideAWSToolbox = () => {
                 className="pillar-card text-center py-6 opacity-0 animate-scale-in"
                 style={{ animationDelay: `${0.2 + index * 0.05}s` }}
               >
-                <div className={`w-12 h-12 rounded-xl ${service.color} flex items-center justify-center mx-auto mb-3`}>
-                  <service.icon className="w-6 h-6 text-background" />
+                <div className="w-14 h-14 rounded-xl overflow-hidden flex items-center justify-center mx-auto mb-3">
+                  <img 
+                    src={service.icon} 
+                    alt={service.name} 
+                    className="w-full h-full object-cover"
+                  />
                 </div>
                 <h3 className="font-bold text-sm mb-1">{service.name}</h3>
                 <p className="text-xs text-muted-foreground">{service.description}</p>
