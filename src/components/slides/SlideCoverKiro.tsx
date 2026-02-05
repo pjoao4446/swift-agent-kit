@@ -1,5 +1,6 @@
 import NuageLogo from "./NuageLogo";
-import { Code, Sparkles } from "lucide-react";
+import { Sparkles } from "lucide-react";
+import kiroIcon from "@/assets/aws-icons/kiro.jpg";
 
 const SlideCoverKiro = () => {
   return (
@@ -14,8 +15,8 @@ const SlideCoverKiro = () => {
       <div className="slide-content relative z-10 flex flex-col items-center justify-center text-center">
         <div className="relative mb-8 opacity-0 animate-fade-in-up">
           <div className="absolute inset-0 blur-3xl bg-primary/40 rounded-full scale-150" />
-          <div className="relative w-28 h-28 rounded-3xl bg-gradient-to-br from-primary via-primary to-nuage-cyan flex items-center justify-center animate-float">
-            <Code className="w-14 h-14 text-foreground" />
+          <div className="relative w-28 h-28 rounded-3xl overflow-hidden animate-float">
+            <img src={kiroIcon} alt="Kiro" className="w-full h-full object-cover" />
           </div>
         </div>
 
