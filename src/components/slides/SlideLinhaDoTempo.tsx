@@ -2,13 +2,13 @@ import NuageLogo from "./NuageLogo";
 
 const SlideLinhaDoTempo = () => {
   const timeline = [
-    { title: "On-Premises", description: "Toda a infraestrutura fica dentro da própria empresa: servidores, rede, armazenamento, climatização, energia e segurança física." },
-    { title: "Colocation", description: "A empresa mantém seus servidores, mas os instala em um data center de terceiros que fornece energia, refrigeração e conectividade." },
-    { title: "Hospedagem Dedicada", description: "Você aluga um servidor físico inteiro de um provedor, que cuida do hardware, mas o uso é exclusivo seu." },
-    { title: "VPS", description: "Servidor físico particionado virtualmente em vários servidores independentes para diferentes clientes." },
-    { title: "Nuvem Privada", description: "Ambiente de nuvem exclusivo de uma organização, podendo estar no data center próprio ou em infraestrutura de terceiros." },
-    { title: "Nuvem Pública", description: "Infraestrutura compartilhada operada por provedores como AWS, Azure e GCP, com recursos alugados sob demanda." },
-    { title: "Nuvem Híbrida", description: "Combinação de nuvem privada e pública, permitindo mover cargas de trabalho entre elas." },
+    { title: "On-Premises", description: "Infraestrutura dentro da própria empresa." },
+    { title: "Colocation", description: "Servidores próprios em data center terceirizado." },
+    { title: "Hospedagem Dedicada", description: "Servidor físico alugado com uso exclusivo." },
+    { title: "VPS", description: "Servidor particionado virtualmente entre clientes." },
+    { title: "Nuvem Privada", description: "Ambiente de nuvem exclusivo de uma organização." },
+    { title: "Nuvem Pública", description: "Recursos compartilhados sob demanda (AWS, Azure, GCP)." },
+    { title: "Nuvem Híbrida", description: "Combinação de nuvem privada e pública." },
   ];
 
   return (
@@ -16,8 +16,8 @@ const SlideLinhaDoTempo = () => {
       <div className="particles" />
       <div className="absolute top-8 left-8 z-10"><NuageLogo /></div>
 
-      <div className="slide-content relative z-10">
-        <div className="text-center mb-8">
+      <div className="slide-content relative z-10 flex flex-col items-center justify-center">
+        <div className="text-center mb-10">
           <h2 className="text-3xl md:text-5xl font-black tracking-tight mb-2 opacity-0 animate-fade-in-up">
             LINHA DO TEMPO DA <span className="text-gradient-magenta">INFRAESTRUTURA</span>
           </h2>
@@ -26,23 +26,25 @@ const SlideLinhaDoTempo = () => {
           </p>
         </div>
 
-        <div className="max-w-6xl mx-auto relative">
-          <div className="absolute left-1/2 top-0 bottom-0 w-px bg-primary/30 hidden md:block" />
-          <div className="grid gap-3">
+        <div className="w-full max-w-6xl mx-auto relative">
+          {/* Horizontal line */}
+          <div className="absolute top-[60px] left-0 right-0 h-px bg-primary/40" />
+
+          <div className="flex justify-between items-start gap-2">
             {timeline.map((item, index) => (
               <div
                 key={item.title}
-                className={`flex items-center gap-4 opacity-0 animate-fade-in-up ${index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"}`}
-                style={{ animationDelay: `${0.2 + index * 0.08}s` }}
+                className="flex flex-col items-center text-center flex-1 opacity-0 animate-fade-in-up"
+                style={{ animationDelay: `${0.2 + index * 0.1}s` }}
               >
-                <div className={`flex-1 ${index % 2 === 0 ? "md:text-right" : "md:text-left"}`}>
-                  <div className="card-glass p-4 rounded-xl inline-block">
-                    <h3 className="font-bold text-sm text-primary mb-1">{item.title}</h3>
-                    <p className="text-sm text-muted-foreground leading-relaxed">{item.description}</p>
-                  </div>
+                {/* Dot */}
+                <div className="w-4 h-4 rounded-full bg-primary shadow-lg shadow-primary/50 mb-2 mt-[52px] relative z-10" />
+
+                {/* Card below */}
+                <div className="card-glass p-3 rounded-xl mt-2 w-full max-w-[140px]">
+                  <h3 className="font-bold text-xs text-primary mb-1 leading-tight">{item.title}</h3>
+                  <p className="text-[10px] text-muted-foreground leading-snug">{item.description}</p>
                 </div>
-                <div className="w-3 h-3 rounded-full bg-primary flex-shrink-0 hidden md:block shadow-lg shadow-primary/50" />
-                <div className="flex-1 hidden md:block" />
               </div>
             ))}
           </div>
