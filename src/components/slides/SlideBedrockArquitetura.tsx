@@ -178,7 +178,7 @@ const SlideBedrockArquitetura = () => {
                   }`}>
                     <Smartphone className="w-8 h-8 text-foreground" />
                   </div>
-                  <p className="text-xs text-center mt-2 font-mono text-muted-foreground">Client App</p>
+                  <p className="text-sm text-center mt-2 font-mono text-muted-foreground">Client App</p>
                 </div>
 
                 {/* API Gateway - alinhado com linha y=160 */}
@@ -195,7 +195,7 @@ const SlideBedrockArquitetura = () => {
                   }`}>
                     <img src={apiGatewayIcon} alt="API Gateway" className="w-full h-full object-cover" />
                   </div>
-                  <p className="text-xs text-center mt-2 font-mono text-muted-foreground">API GW</p>
+                  <p className="text-sm text-center mt-2 font-mono text-muted-foreground">API GW</p>
                 </div>
 
                 {/* Lambda - alinhado com linha y=160 */}
@@ -212,7 +212,7 @@ const SlideBedrockArquitetura = () => {
                   }`}>
                     <img src={lambdaIcon} alt="Lambda" className="w-full h-full object-cover" />
                   </div>
-                  <p className="text-xs text-center mt-2 font-mono text-muted-foreground">Lambda</p>
+                  <p className="text-sm text-center mt-2 font-mono text-muted-foreground">Lambda</p>
                 </div>
 
                 {/* Bedrock - posição: 340, 70 */}
@@ -232,7 +232,7 @@ const SlideBedrockArquitetura = () => {
                       <div className="absolute inset-0 rounded-2xl bg-primary/30 animate-ping" />
                     )}
                   </div>
-                  <p className="text-xs text-center mt-2 font-mono text-primary font-bold">Bedrock</p>
+                  <p className="text-sm text-center mt-2 font-mono text-primary font-bold">Bedrock</p>
                 </div>
 
                 {/* Database - posição: 340, 250 */}
@@ -249,7 +249,7 @@ const SlideBedrockArquitetura = () => {
                   }`}>
                     <img src={dynamodbIcon} alt="DynamoDB" className="w-full h-full object-cover" />
                   </div>
-                  <p className="text-xs text-center mt-2 font-mono text-muted-foreground">DynamoDB</p>
+                  <p className="text-sm text-center mt-2 font-mono text-muted-foreground">DynamoDB</p>
                 </div>
 
                 {/* Partícula animada dentro do SVG */}
@@ -270,7 +270,7 @@ const SlideBedrockArquitetura = () => {
               {/* Status indicator */}
               <div className="flex items-center gap-2 mt-4 pt-4 border-t border-border/30">
                 <div className={`w-2 h-2 rounded-full ${flowStep === 6 ? 'bg-green-500' : 'bg-primary'} animate-pulse`} />
-                <span className="text-xs font-mono text-muted-foreground">
+                <span className="text-sm font-mono text-muted-foreground">
                   {flowStep === 0 && "Enviando request..."}
                   {flowStep === 1 && "Validando API Gateway..."}
                   {flowStep === 2 && "Roteando Lambda..."}
@@ -307,7 +307,7 @@ const SlideBedrockArquitetura = () => {
                     <Smartphone className="w-6 h-6 text-primary" strokeWidth={1.5} />
                     <div>
                       <p className="font-mono text-sm text-foreground">Mobile/Web App</p>
-                      <p className="text-xs text-muted-foreground">React Native • Flutter • Web</p>
+                      <p className="text-sm text-muted-foreground">React Native • Flutter • Web</p>
                     </div>
                   </div>
                 </div>
@@ -332,7 +332,7 @@ const SlideBedrockArquitetura = () => {
                     <img src={apiGatewayIcon} alt="API Gateway" className="w-8 h-8 rounded object-cover" />
                     <div>
                       <p className="font-mono text-sm text-foreground">AWS::ApiGateway</p>
-                      <p className="text-xs text-muted-foreground">REST API • Auth • Rate Limiting</p>
+                      <p className="text-sm text-muted-foreground">REST API • Auth • Rate Limiting</p>
                     </div>
                   </div>
                 </div>
@@ -357,7 +357,7 @@ const SlideBedrockArquitetura = () => {
                     <img src={lambdaIcon} alt="Lambda" className="w-8 h-8 rounded object-cover" />
                     <div>
                       <p className="font-mono text-sm text-foreground">AWS::Lambda</p>
-                      <p className="text-xs text-muted-foreground">Orchestrator • Python/Node • Timeout: 30s</p>
+                      <p className="text-sm text-muted-foreground">Orchestrator • Python/Node • Timeout: 30s</p>
                     </div>
                   </div>
                 </div>
@@ -378,7 +378,7 @@ const SlideBedrockArquitetura = () => {
                       <img src={bedrockIcon} alt="Bedrock" className="w-8 h-8 rounded object-cover" />
                       <div>
                         <p className="font-mono text-sm text-foreground">Bedrock</p>
-                        <p className="text-xs text-muted-foreground">Claude-3.5</p>
+                        <p className="text-sm text-muted-foreground">Claude-3.5</p>
                       </div>
                     </div>
                   </div>
@@ -397,7 +397,7 @@ const SlideBedrockArquitetura = () => {
                       <img src={dynamodbIcon} alt="DynamoDB" className="w-8 h-8 rounded object-cover" />
                       <div>
                         <p className="font-mono text-sm text-foreground">DynamoDB</p>
-                        <p className="text-xs text-muted-foreground">User Data</p>
+                        <p className="text-sm text-muted-foreground">User Data</p>
                       </div>
                     </div>
                   </div>
@@ -408,15 +408,15 @@ const SlideBedrockArquitetura = () => {
               <div className="flex gap-4 mt-4 pt-4 border-t border-border/30">
                 <div className="flex items-center gap-2">
                   <div className="w-3 h-3 rounded-full bg-primary" />
-                  <span className="text-xs text-muted-foreground">IA/ML</span>
+                  <span className="text-sm text-muted-foreground">IA/ML</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <div className="w-3 h-3 rounded-full bg-nuage-cyan" />
-                  <span className="text-xs text-muted-foreground">Data</span>
+                  <span className="text-sm text-muted-foreground">Data</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <div className="w-3 h-3 rounded-full bg-nuage-gold" />
-                  <span className="text-xs text-muted-foreground">Infra</span>
+                  <span className="text-sm text-muted-foreground">Infra</span>
                 </div>
               </div>
             </div>
@@ -425,9 +425,9 @@ const SlideBedrockArquitetura = () => {
           {/* Pergunta do cenário */}
           <div className="mt-4 opacity-0 animate-fade-in-up delay-500">
             <div className="card-glass px-6 py-3 rounded-xl max-w-3xl mx-auto">
-              <p className="text-xs text-muted-foreground mb-1">Cenário de exemplo:</p>
+              <p className="text-sm text-muted-foreground mb-1">Cenário de exemplo:</p>
               <p className="text-sm text-foreground italic">
-                "Baseado nas minhas compras do ano passado, qual o melhor plano de investimento para o meu perfil atual?"
+                "Baseado no desempenho dos meus alunos no último semestre, quais disciplinas precisam de reforço e qual a melhor estratégia pedagógica?"
               </p>
             </div>
           </div>

@@ -9,6 +9,7 @@ const SlideTop3Brasil = () => {
     { name: "DevOps", type: "Advanced" },
     { name: "Data & Analytics", type: "Advanced" },
     { name: "Education", type: "Advanced" },
+    { name: "Migration & Modernization", type: "Advanced" },
   ];
 
   const sdps = [
@@ -40,30 +41,30 @@ const SlideTop3Brasil = () => {
       </div>
 
       <div className="slide-content relative z-10 h-full">
-        <div className="grid lg:grid-cols-[1fr_1.5fr] gap-6 max-w-7xl mx-auto items-center h-full">
+        <div className="grid lg:grid-cols-[1fr_1.8fr] gap-4 max-w-7xl mx-auto items-center h-full">
           
-          {/* Left Side - TOP 3 BRASIL */}
+          {/* Left Side - TOP 3 BRASIL (compacto) */}
           <div className="text-center lg:text-left opacity-0 animate-slide-in-left">
             {/* AWS Partner Badge */}
             <div className="flex items-center justify-center lg:justify-start gap-3 mb-8">
               <div className="flex items-center gap-2">
-                <span className="text-lg font-black text-foreground">aws</span>
-                <span className="text-xs text-muted-foreground">partner<br/>network</span>
+                <span className="text-xl font-black text-foreground">aws</span>
+                <span className="text-sm text-muted-foreground">partner<br/>network</span>
               </div>
-              <span className="px-3 py-1.5 bg-primary text-primary-foreground text-xs font-bold rounded">
+              <span className="px-3 py-1.5 bg-primary text-primary-foreground text-sm font-bold rounded">
                 Advanced<br/>Consulting Partner
               </span>
             </div>
             
             {/* TOP 3 Typography */}
-            <div className="relative mb-4">
-              <span className="text-6xl md:text-8xl font-black text-foreground tracking-tight block">TOP</span>
-              <span className="text-[140px] md:text-[200px] font-black text-gradient-magenta leading-none block -mt-4">
+            <div className="relative mb-2">
+              <span className="text-7xl md:text-9xl font-black text-foreground tracking-tight block">TOP</span>
+              <span className="text-[180px] md:text-[260px] font-black text-gradient-magenta leading-none block -mt-6">
                 3
               </span>
             </div>
             
-            <h2 className="text-5xl md:text-7xl font-black tracking-tight text-foreground/70 -mt-8">
+            <h2 className="text-6xl md:text-8xl font-black tracking-tight text-foreground/70 -mt-10">
               BRASIL
             </h2>
           </div>
@@ -73,15 +74,15 @@ const SlideTop3Brasil = () => {
             
             {/* 7x Competências */}
             <div className="relative">
-              <div className="flex items-center justify-between mb-4">
+              <div className="flex items-center justify-between mb-4 max-w-[80%] ml-auto">
                 <h3 className="text-lg font-bold text-foreground">Competências AWS</h3>
                 <span className="px-4 py-2 bg-primary text-primary-foreground text-sm font-black rounded-lg shadow-lg shadow-primary/30">
-                  7x COMPETÊNCIAS
+                  8x COMPETÊNCIAS
                 </span>
               </div>
               
               {/* Grid de Competências estilo badges AWS */}
-              <div className="grid grid-cols-4 lg:grid-cols-7 gap-2">
+              <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 max-w-[80%] ml-auto">
                 {competencias.map((comp, index) => (
                   <div
                     key={comp.name}
@@ -90,15 +91,15 @@ const SlideTop3Brasil = () => {
                   >
                     <div className="text-center">
                       <div className="flex items-center justify-center gap-1 mb-2">
-                        <span className="text-[10px] font-bold text-nuage-cyan">aws</span>
-                        <span className="text-[8px] text-muted-foreground">partner<br/>network</span>
+                        <span className="text-sm font-bold text-nuage-cyan">aws</span>
+                        <span className="text-xs text-muted-foreground">partner<br/>network</span>
                       </div>
                       <div className="h-px bg-border/50 mb-2" />
-                      <p className="text-[10px] text-muted-foreground mb-0.5">{comp.type}</p>
-                      <p className="text-xs font-bold text-foreground leading-tight">{comp.name}</p>
-                      <p className="text-[9px] text-muted-foreground mt-1">Competency</p>
+                      <p className="text-xs text-muted-foreground mb-0.5">{comp.type}</p>
+                      <p className="text-sm font-bold text-foreground leading-tight">{comp.name}</p>
+                      <p className="text-xs text-muted-foreground mt-1">Competency</p>
                       <div className="h-px bg-border/50 my-2" />
-                      <p className="text-[9px] text-muted-foreground">Consulting Partner</p>
+                      <p className="text-xs text-muted-foreground">Consulting Partner</p>
                     </div>
                   </div>
                 ))}
@@ -107,7 +108,7 @@ const SlideTop3Brasil = () => {
 
             {/* 10x SDPs */}
             <div className="relative">
-              <div className="flex items-center justify-between mb-4">
+              <div className="flex items-center justify-between mb-4 max-w-[80%] ml-auto">
                 <h3 className="text-lg font-bold text-foreground">Service Delivery Programs</h3>
                 <span className="px-4 py-2 bg-primary text-primary-foreground text-sm font-black rounded-lg shadow-lg shadow-primary/30">
                   10x SDPs
@@ -115,7 +116,7 @@ const SlideTop3Brasil = () => {
               </div>
               
               {/* Grid de SDPs estilo badges AWS */}
-              <div className="grid grid-cols-5 lg:grid-cols-10 gap-2">
+              <div className="grid grid-cols-5 gap-2 max-w-[80%] ml-auto">
                 {sdps.map((sdp, index) => (
                   <div
                     key={sdp}
@@ -123,10 +124,10 @@ const SlideTop3Brasil = () => {
                     style={{ animationDelay: `${0.5 + index * 0.03}s` }}
                   >
                     <div className="text-center">
-                      <span className="text-[10px] font-bold text-nuage-cyan block mb-1">aws</span>
-                      <p className="text-[9px] font-semibold text-foreground mb-1">PARTNER</p>
+                      <span className="text-sm font-bold text-nuage-cyan block mb-1">aws</span>
+                      <p className="text-xs font-semibold text-foreground mb-1">PARTNER</p>
                       <div className="h-px bg-nuage-cyan/30 mb-1" />
-                      <p className="text-[8px] text-muted-foreground leading-tight">{sdp.replace('AWS ', '').replace('Amazon ', '')}</p>
+                      <p className="text-xs text-muted-foreground leading-tight">{sdp.replace('AWS ', '').replace('Amazon ', '')}</p>
                     </div>
                   </div>
                 ))}

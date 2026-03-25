@@ -59,7 +59,7 @@ const SlideBedrockModelos = () => {
                   )}
                 </div>
                 <h3 className="text-sm font-bold mb-1">{model.name}</h3>
-                <p className="text-xs text-muted-foreground">{model.provider}</p>
+                <p className="text-sm text-muted-foreground">{model.provider}</p>
               </div>
             ))}
             
@@ -72,7 +72,7 @@ const SlideBedrockModelos = () => {
                 <MoreHorizontal className="w-6 h-6 text-muted-foreground" />
               </div>
               <h3 className="text-sm font-bold mb-1">E mais...</h3>
-              <p className="text-xs text-muted-foreground">muitos outros</p>
+              <p className="text-sm text-muted-foreground">muitos outros</p>
             </div>
 
             {/* Ghost cards to show infinity */}
@@ -84,7 +84,7 @@ const SlideBedrockModelos = () => {
                 <span className="text-xl font-black text-muted-foreground/50">?</span>
               </div>
               <h3 className="text-sm font-bold mb-1 text-muted-foreground/50">Novo</h3>
-              <p className="text-xs text-muted-foreground/50">Em breve</p>
+              <p className="text-sm text-muted-foreground/50">Em breve</p>
             </div>
           </div>
 

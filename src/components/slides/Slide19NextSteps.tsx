@@ -12,7 +12,7 @@ const Slide19NextSteps = () => {
     {
       icon: Users,
       step: "02",
-      title: "Workshop Técnico",
+      title: "Amazon Day Técnico",
       description: "Sessão hands-on com sua equipe para explorar as soluções",
     },
     {

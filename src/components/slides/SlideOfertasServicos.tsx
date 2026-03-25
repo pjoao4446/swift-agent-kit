@@ -85,13 +85,13 @@ const SlideOfertasServicos = () => {
               
               {/* Title */}
               <div className="bg-gradient-to-r from-[#1a0a4a] to-[#2d0b5a] rounded-t-lg py-3 px-2 text-center">
-                <h3 className="text-xs font-bold text-foreground leading-tight">{oferta.title}</h3>
+                <h3 className="text-sm font-bold text-foreground leading-tight">{oferta.title}</h3>
               </div>
               
               {/* Items */}
               <div className="bg-card/30 backdrop-blur rounded-b-lg p-3 space-y-2 min-h-[140px]">
                 {oferta.items.map((item) => (
-                  <p key={item} className="text-[10px] text-muted-foreground leading-tight">
+                  <p key={item} className="text-sm text-muted-foreground leading-tight">
                     {item}
                   </p>
                 ))}

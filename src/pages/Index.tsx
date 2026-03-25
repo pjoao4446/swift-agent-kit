@@ -1,10 +1,17 @@
 import { useState, useEffect, useCallback } from "react";
 import SlideNavigation from "@/components/slides/SlideNavigation";
 import Slide01Cover from "@/components/slides/Slide01Cover";
-import Slide02Purpose from "@/components/slides/Slide02Purpose";
 import SlideConquistas from "@/components/slides/SlideConquistas";
 import SlideTop3Brasil from "@/components/slides/SlideTop3Brasil";
 import SlideOfertasServicos from "@/components/slides/SlideOfertasServicos";
+import SlideCoverInfra from "@/components/slides/SlideCoverInfra";
+import SlideInfraTI from "@/components/slides/SlideInfraTI";
+import SlideLinhaDoTempo from "@/components/slides/SlideLinhaDoTempo";
+import SlidePreNuvem from "@/components/slides/SlidePreNuvem";
+import SlideRevolucaoNuvem from "@/components/slides/SlideRevolucaoNuvem";
+import SlideResponsabilidadeCompartilhada from "@/components/slides/SlideResponsabilidadeCompartilhada";
+import SlideConhecaAWS from "@/components/slides/SlideConhecaAWS";
+import SlideServicosAWS from "@/components/slides/SlideServicosAWS";
 import SlideCoverIA from "@/components/slides/SlideCoverIA";
 import SlideAIOrigin from "@/components/slides/SlideAIOrigin";
 import SlideIATradicional from "@/components/slides/SlideIATradicional";
@@ -20,26 +27,24 @@ import SlideBedrockModelos from "@/components/slides/SlideBedrockModelos";
 import SlideBedrockEscolha from "@/components/slides/SlideBedrockEscolha";
 import SlideBedrockCustomizacao from "@/components/slides/SlideBedrockCustomizacao";
 import SlideBedrockArquitetura from "@/components/slides/SlideBedrockArquitetura";
-import SlideCoverNovidades2026 from "@/components/slides/SlideCoverNovidades2026";
-import SlideCoverKiro from "@/components/slides/SlideCoverKiro";
-import Slide07KiroIntro from "@/components/slides/Slide07KiroIntro";
-import Slide08KiroUseCases from "@/components/slides/Slide08KiroUseCases";
-import SlideCoverQuickSuite from "@/components/slides/SlideCoverQuickSuite";
-import Slide11QuickSuiteCapabilities from "@/components/slides/Slide11QuickSuiteCapabilities";
-import Slide12Spaces from "@/components/slides/Slide12Spaces";
-import SlideQuickSuiteIntegracoes from "@/components/slides/SlideQuickSuiteIntegracoes";
-import Slide13BrowserExtension from "@/components/slides/Slide13BrowserExtension";
-import Slide14QuickSuiteDifferentials from "@/components/slides/Slide14QuickSuiteDifferentials";
 import Slide19NextSteps from "@/components/slides/Slide19NextSteps";
 import Slide20ThankYou from "@/components/slides/Slide20ThankYou";
 
 const slides = [
   // Módulo 1: Abertura NuageIT
   Slide01Cover,
-  Slide02Purpose,
   SlideConquistas,
   SlideTop3Brasil,
   SlideOfertasServicos,
+  // Módulo Infraestrutura de Tecnologia
+  SlideCoverInfra,
+  SlideInfraTI,
+  SlideLinhaDoTempo,
+  SlidePreNuvem,
+  SlideRevolucaoNuvem,
+  SlideResponsabilidadeCompartilhada,
+  SlideConhecaAWS,
+  SlideServicosAWS,
   // Módulo 2: Capa IA + Evolução
   SlideCoverIA,
   SlideAIOrigin,
@@ -57,19 +62,6 @@ const slides = [
   SlideBedrockEscolha,
   SlideBedrockCustomizacao,
   SlideBedrockArquitetura,
-  // Capa Novidades 2026
-  SlideCoverNovidades2026,
-  // Módulo 4: Amazon Kiro
-  SlideCoverKiro,
-  Slide07KiroIntro,
-  Slide08KiroUseCases,
-  // Módulo 5: Quick Suite
-  SlideCoverQuickSuite,
-  Slide11QuickSuiteCapabilities,
-  Slide12Spaces,
-  SlideQuickSuiteIntegracoes,
-  Slide13BrowserExtension,
-  Slide14QuickSuiteDifferentials,
   // Módulo 6: Encerramento
   Slide19NextSteps,
   Slide20ThankYou,

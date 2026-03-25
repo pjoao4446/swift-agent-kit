@@ -63,7 +63,7 @@ const SlideAWSToolbox = () => {
                   />
                 </div>
                 <h3 className="font-bold text-sm mb-1">{service.name}</h3>
-                <p className="text-xs text-muted-foreground">{service.description}</p>
+                <p className="text-sm text-muted-foreground">{service.description}</p>
               </div>
             ))}
           </div>

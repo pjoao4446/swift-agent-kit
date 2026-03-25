@@ -1,15 +1,11 @@
 import NuageLogo from "./NuageLogo";
+import unicepLogo from "@/assets/logouniceplac.png";
 
 const Slide01Cover = () => {
   return (
     <div className="slide network-bg">
       <div className="particles" />
       <div className="network-lines" />
-      
-      {/* Header */}
-      <div className="absolute top-8 left-8 z-10">
-        <NuageLogo />
-      </div>
 
       {/* Main Content */}
       <div className="slide-content flex flex-col items-center justify-center text-center relative z-10">
@@ -20,11 +16,9 @@ const Slide01Cover = () => {
         </div>
 
         <h1 className="text-5xl md:text-7xl lg:text-8xl font-black tracking-tighter mb-6 opacity-0 animate-fade-in-up delay-100">
-          <span className="text-foreground">WORKSHOP:</span>
+          <span className="text-foreground">AMAZON DAY</span>
           <br />
-          <span className="text-gradient-magenta">INTELIGÊNCIA</span>
-          <br />
-          <span className="text-foreground">ARTIFICIAL</span>
+          <span className="text-gradient-magenta">UNICEPLAC</span>
         </h1>
 
         <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mb-12 opacity-0 animate-fade-in-up delay-200">
@@ -35,8 +29,13 @@ const Slide01Cover = () => {
 
         <div className="flex gap-4 opacity-0 animate-fade-in-up delay-300">
           <button className="px-8 py-4 rounded-full bg-primary text-primary-foreground font-bold text-lg hover:scale-105 transition-transform glow-magenta">
-            Iniciar Workshop
+            Iniciar Amazon Day
           </button>
+        </div>
+
+        <div className="mt-10 opacity-0 animate-fade-in-up delay-500 flex items-center justify-center gap-6">
+          <NuageLogo className="h-14 md:h-16" />
+          <img src={unicepLogo} alt="Uniceplac" className="h-16 md:h-19 object-contain rounded-2xl" />
         </div>
       </div>
     </div>

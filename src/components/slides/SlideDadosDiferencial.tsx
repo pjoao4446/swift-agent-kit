@@ -1,5 +1,5 @@
 import NuageLogo from "./NuageLogo";
-import { Brain, Store, ArrowRight, MessageSquare, TrendingUp, Users, Database, BarChart3 } from "lucide-react";
+import { Brain, Store, ArrowRight, MessageSquare, TrendingUp, Users, Database, BarChart3, GraduationCap } from "lucide-react";
 
 const SlideDadosDiferencial = () => {
   return (
@@ -29,7 +29,7 @@ const SlideDadosDiferencial = () => {
               <div className="bg-primary rounded-xl p-4 mb-4 h-[72px] flex items-center">
                 <div className="flex items-center gap-3">
                   <MessageSquare className="w-6 h-6 text-foreground flex-shrink-0" />
-                  <p className="text-foreground text-sm">"Qual a melhor estratégia de marketing digital?"</p>
+                  <p className="text-foreground text-sm">"Como melhorar o engajamento dos alunos em sala de aula?"</p>
                 </div>
               </div>
               <div className="card-glass p-6 rounded-xl h-[200px] flex flex-col items-center justify-center">
@@ -49,31 +49,31 @@ const SlideDadosDiferencial = () => {
             <div className="opacity-0 animate-fade-in-up delay-300">
               <div className="mb-4">
                 <h3 className="text-2xl font-bold mb-1">IA Generativa que conhece o seu negócio</h3>
-                <p className="text-muted-foreground">Sabe sobre <span className="text-nuage-cyan font-medium">seu negócio e os seus clientes</span></p>
+                <p className="text-muted-foreground">Sabe sobre <span className="text-nuage-cyan font-medium">sua instituição e os seus alunos</span></p>
               </div>
               <div className="bg-primary rounded-xl p-4 mb-4 h-[72px] flex items-center">
                 <div className="flex items-center gap-3">
                   <MessageSquare className="w-6 h-6 text-foreground flex-shrink-0" />
-                  <p className="text-foreground text-sm">"Qual foi a taxa de churn dos clientes premium do segmento varejo no Q3?"</p>
+                  <p className="text-foreground text-sm">"Qual foi a taxa de evasão dos alunos de Engenharia no último semestre e quais os principais motivos?"</p>
                 </div>
               </div>
               <div className="card-glass p-6 rounded-xl h-[200px] border border-nuage-cyan/30 flex items-center justify-center">
                 <div className="grid grid-cols-2 gap-3">
                   <div className="bg-nuage-cyan/10 rounded-lg p-3 flex flex-col items-center justify-center">
                     <TrendingUp className="w-8 h-8 text-nuage-cyan mb-2" />
-                    <span className="text-xs text-muted-foreground">Analytics</span>
+                    <span className="text-sm text-muted-foreground">Desempenho</span>
                   </div>
                   <div className="bg-nuage-gold/10 rounded-lg p-3 flex flex-col items-center justify-center">
-                    <Users className="w-8 h-8 text-nuage-gold mb-2" />
-                    <span className="text-xs text-muted-foreground">Clientes</span>
+                    <GraduationCap className="w-8 h-8 text-nuage-gold mb-2" />
+                    <span className="text-sm text-muted-foreground">Alunos</span>
                   </div>
                   <div className="bg-primary/10 rounded-lg p-3 flex flex-col items-center justify-center">
                     <Database className="w-8 h-8 text-primary mb-2" />
-                    <span className="text-xs text-muted-foreground">Seus Dados</span>
+                    <span className="text-sm text-muted-foreground">Matrículas</span>
                   </div>
                   <div className="bg-nuage-cyan/10 rounded-lg p-3 flex flex-col items-center justify-center">
                     <BarChart3 className="w-8 h-8 text-nuage-cyan mb-2" />
-                    <span className="text-xs text-muted-foreground">Insights</span>
+                    <span className="text-sm text-muted-foreground">Evasão</span>
                   </div>
                 </div>
               </div>
