@@ -36,6 +36,7 @@ const Slide01Cover = () => {
 
         <div className="mt-10 opacity-0 animate-fade-in-up delay-500 flex items-center justify-center gap-6">
           <NuageLogo className="h-14 md:h-16" />
+          <img src={awsLogo} alt="AWS" className="h-10 md:h-12 object-contain brightness-0 invert" />
           <img src={unicepLogo} alt="Uniceplac" className="h-16 md:h-19 object-contain rounded-2xl" />
         </div>
       </div>
