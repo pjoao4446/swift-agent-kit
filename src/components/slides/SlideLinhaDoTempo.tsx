@@ -41,9 +41,9 @@ const SlideLinhaDoTempo = () => {
                 <div className="w-4 h-4 rounded-full bg-primary shadow-lg shadow-primary/50 mb-2 mt-[52px] relative z-10" />
 
                 {/* Card below */}
-                <div className="card-glass p-3 rounded-xl mt-2 w-full max-w-[140px]">
-                  <h3 className="font-bold text-xs text-primary mb-1 leading-tight">{item.title}</h3>
-                  <p className="text-[10px] text-muted-foreground leading-snug">{item.description}</p>
+                <div className="card-glass p-4 rounded-xl mt-2 w-full min-h-[160px] flex flex-col">
+                  <h3 className="font-bold text-sm text-primary mb-2 leading-tight">{item.title}</h3>
+                  <p className="text-xs text-muted-foreground leading-relaxed">{item.description}</p>
                 </div>
               </div>
             ))}
