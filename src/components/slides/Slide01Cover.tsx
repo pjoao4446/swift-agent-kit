@@ -1,5 +1,6 @@
 import NuageLogo from "./NuageLogo";
 import unicepLogo from "@/assets/logouniceplac.png";
+import awsLogo from "@/assets/aws-logo.png";
 
 const Slide01Cover = () => {
   return (
