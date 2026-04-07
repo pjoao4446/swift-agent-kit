@@ -117,7 +117,8 @@ const Index = () => {
     return () => window.removeEventListener("keydown", handleKeyDown);
   }, [goToNext, goToPrevious]);
 
-  const CurrentSlideComponent = slides[currentSlide];
+  const safeIndex = Math.min(currentSlide, slides.length - 1);
+  const CurrentSlideComponent = slides[safeIndex];
 
   return (
     <div className="relative min-h-screen overflow-hidden">
