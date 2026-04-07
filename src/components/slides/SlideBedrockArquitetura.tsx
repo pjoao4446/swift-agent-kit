@@ -63,7 +63,7 @@ const SlideBedrockArquitetura = () => {
         <NuageLogo />
       </div>
 
-      <div className="slide-content relative z-10 flex flex-col justify-center h-full" style={{ transform: 'scale(0.92)', transformOrigin: 'center center' }}>
+      <div className="slide-content relative z-10 flex flex-col justify-center h-full !max-w-none" style={{ transform: 'scale(0.88)', transformOrigin: 'center center' }}>
         <div className="text-center mb-3">
           <h2 className="text-3xl md:text-4xl font-black tracking-tight mb-1 opacity-0 animate-fade-in-up delay-100">
             CRIE SUAS PRÓPRIAS <span className="text-gradient-magenta">SOLUÇÕES DE IA</span>
