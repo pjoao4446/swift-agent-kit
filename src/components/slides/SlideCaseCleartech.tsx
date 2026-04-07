@@ -1,13 +1,6 @@
 import NuageLogo from "./NuageLogo";
-import { Shield, Database, Server, CheckCircle2 } from "lucide-react";
 
 const SlideCaseCleartech = () => {
-  const stats = [
-    { icon: Database, value: "+60BI", label: "Registros processados" },
-    { icon: Shield, value: "Certificação", label: "StirShaken compliance" },
-    { icon: Server, value: "99.99%", label: "Disponibilidade" },
-  ];
-
   return (
     <div className="slide network-bg">
       <div className="particles" />
@@ -15,44 +8,69 @@ const SlideCaseCleartech = () => {
         <NuageLogo />
       </div>
 
-      <div className="slide-content relative z-10">
-        <div className="text-center mb-4">
-          <span className="inline-block px-4 py-2 rounded-full card-glass text-xs font-medium text-nuage-cyan mb-4 glow-cyan">
-            Case de Sucesso
-          </span>
-          <h2 className="text-3xl md:text-5xl font-black tracking-tight mb-2 opacity-0 animate-fade-in-up">
-            <span className="text-gradient-cyan">CLEARTECH</span>
-          </h2>
-          <p className="text-base text-muted-foreground opacity-0 animate-fade-in-up delay-100">
-            Data Lake StirShaken
-          </p>
-        </div>
-
-        <div className="max-w-5xl mx-auto mb-6 opacity-0 animate-fade-in-up delay-100" style={{ animationFillMode: "forwards" }}>
-          <div className="card-glass rounded-xl p-5">
-            <div className="flex items-start gap-3">
-              <Shield className="w-6 h-6 text-nuage-cyan flex-shrink-0 mt-1" />
-              <p className="text-sm text-muted-foreground leading-relaxed">
-                A Cleartech necessitava de uma solução robusta para processamento e certificação de chamadas seguindo 
-                o protocolo <span className="text-foreground font-semibold">STIR/SHAKEN</span>. A implementação do Data Lake na AWS 
-                permitiu processar bilhões de registros com alta disponibilidade e conformidade regulatória.
+      <div className="slide-content relative z-10 flex items-center justify-center h-full">
+        <div className="w-full max-w-6xl mx-auto grid grid-cols-[1fr_1.6fr] gap-0 rounded-2xl overflow-hidden shadow-2xl opacity-0 animate-fade-in-up" style={{ animationFillMode: "forwards" }}>
+          {/* Left Panel - Company Info */}
+          <div className="bg-gradient-to-b from-[hsl(230,60%,30%)] to-[hsl(260,50%,25%)] p-8 flex flex-col justify-between text-white relative">
+            <div>
+              <div className="mb-6">
+                <h3 className="text-2xl font-black tracking-tight uppercase">Cleartech</h3>
+                <p className="text-[10px] text-white/60 tracking-widest">TRUST AT THE HEART OF COMMUNICATIONS</p>
+              </div>
+              <p className="text-sm leading-relaxed text-white/90">
+                A <strong>Cleartech</strong> é referência em tecnologia para o setor de telecom no Brasil desde 1999, com atuação em <strong>projetos de missão crítica</strong> e excelência no desenvolvimento de soluções reguladas, como o sistema de <strong>Portabilidade Numérica</strong>, bem como plataformas de medição de qualidade de banda larga e gestão de cadastro centralizado. Com mais de <strong>75 milhões de portabilidades realizadas no Brasil</strong> e atuação em <strong>270+ operadoras</strong>, a companhia mantém <strong>99,99% de disponibilidade</strong>. Além disso, expandiu sua presença internacional ao implantar a portabilidade numérica no <strong>Uruguai</strong>, marcando seu início na América Latina.
               </p>
             </div>
           </div>
-        </div>
 
-        <div className="grid grid-cols-3 gap-6 max-w-4xl mx-auto">
-          {stats.map((stat, i) => (
-            <div
-              key={stat.label}
-              className="card-glass rounded-xl p-6 text-center opacity-0 animate-fade-in-up glow-cyan"
-              style={{ animationDelay: `${0.2 + i * 0.1}s`, animationFillMode: "forwards" }}
-            >
-              <stat.icon className="w-8 h-8 text-nuage-cyan mx-auto mb-3" />
-              <div className="text-4xl md:text-5xl font-black text-gradient-cyan mb-2">{stat.value}</div>
-              <p className="text-xs text-muted-foreground">{stat.label}</p>
+          {/* Right Panel - Case Details */}
+          <div className="bg-white p-8 flex flex-col">
+            <div className="mb-4">
+              <div className="bg-[hsl(230,50%,20%)] text-white px-6 py-3 rounded-lg mb-2">
+                <h2 className="text-2xl font-black tracking-tight">CASE DE SUCESSO: CLEARTECH</h2>
+              </div>
+              <div className="bg-nuage-cyan/10 text-nuage-cyan px-4 py-2 rounded-md text-sm font-medium">
+                Data Lake – StirShaken (Ligações telefônicas de todo Brasil)
+              </div>
             </div>
-          ))}
+
+            <p className="text-sm text-gray-700 leading-relaxed mb-6">
+              Implementamos um Data Lake escalável na AWS como parte do projeto STIR/SHAKEN, com o objetivo de combater fraudes telefônicas e atender exigências da ANATEL. A arquitetura foi desenhada para processar até <strong>2 bilhões de registros por dia</strong>, utilizando S3 com arquivos Parquet na camada Bronze e Apache Iceberg na camada Gold, adotando o modelo Lakehouse para garantir <strong>escalabilidade, versionamento e performance analítica</strong>. A solução oferece baixo custo, flexibilidade e suporte à evolução contínua da análise de dados.
+            </p>
+
+            <div className="grid grid-cols-3 gap-4 mt-auto">
+              <div className="rounded-xl overflow-hidden">
+                <div className="bg-gradient-to-br from-nuage-cyan to-[hsl(200,80%,40%)] text-white text-center py-4 px-3">
+                  <span className="text-3xl font-black">+60</span>
+                  <span className="text-lg font-bold">BI</span>
+                </div>
+                <div className="bg-[hsl(230,50%,20%)] text-white text-center py-3 px-3">
+                  <p className="text-xs font-bold uppercase mb-1">De Registros Mensais</p>
+                  <p className="text-[10px] text-white/70">contendo dados de todas as ligações do Brasil, realizadas e recebidas</p>
+                </div>
+              </div>
+
+              <div className="rounded-xl overflow-hidden">
+                <div className="bg-gradient-to-br from-[hsl(230,50%,20%)] to-[hsl(260,50%,30%)] text-white text-center py-4 px-3">
+                  <span className="text-base font-semibold leading-tight">Estrutura utilizada para certificação das chamadas telefônicas</span>
+                </div>
+                <div className="bg-primary/10 text-gray-800 text-center py-3 px-3">
+                  <p className="text-[10px]">realizadas, com <strong>baixa latência</strong> para não impactar o usuário final.</p>
+                </div>
+              </div>
+
+              <div className="rounded-xl overflow-hidden">
+                <div className="bg-gradient-to-br from-nuage-cyan to-[hsl(200,80%,40%)] text-white text-center py-4 px-3">
+                  <span className="text-3xl font-black">+99</span>
+                  <span className="text-lg font-bold">,99%</span>
+                </div>
+                <div className="bg-[hsl(230,50%,20%)] text-white text-center py-3 px-3">
+                  <p className="text-xs font-bold uppercase mb-1">De Disponibilidade</p>
+                  <p className="text-[10px] text-white/70">de todo o ambiente, atendendo aos requisitos da Anatel</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
