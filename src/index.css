@@ -69,15 +69,13 @@
 
 @layer components {
   .slide {
-    @apply w-full h-full flex flex-col justify-center items-center relative overflow-hidden;
+    @apply min-h-screen w-full flex flex-col justify-center items-center relative overflow-hidden;
     background: var(--gradient-hero);
-    width: 1920px;
-    height: 1080px;
   }
 
   .slide-content {
-    @apply mx-auto px-16 py-12 w-full;
-    max-width: 1720px;
+    @apply mx-auto px-8 py-16 w-full;
+    max-width: 90vw;
   }
 
   .text-gradient-magenta {
@@ -136,7 +134,19 @@
   .pillar-card:hover {
     transform: translateY(-4px);
     box-shadow: 0 20px 40px hsl(330 100% 50% / 0.2);
-  }
+}
+
+/* Viewport-responsive slide typography — scales up on larger screens */
+.slide h1 { font-size: clamp(2.5rem, 5vw, 8rem) !important; }
+.slide h2 { font-size: clamp(2rem, 4vw, 6rem) !important; }
+.slide h3 { font-size: clamp(1.25rem, 2vw, 3rem) !important; }
+.slide p  { font-size: clamp(1rem, 1.4vw, 2.25rem) !important; }
+.slide span { font-size: clamp(0.875rem, 1.2vw, 2rem); }
+.slide .text-xs, .slide .text-sm { font-size: clamp(0.75rem, 1vw, 1.5rem) !important; }
+
+/* Scale icons and cards with viewport */
+.slide .pillar-card { padding: clamp(1rem, 2vw, 2.5rem); }
+.slide img { max-width: 100%; height: auto; }
 }
 
 @layer utilities {
