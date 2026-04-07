@@ -1,5 +1,5 @@
 import NuageLogo from "./NuageLogo";
-import { Waves, Archive } from "lucide-react";
+import { Waves, Archive, Database, FileText, Video, MessageCircle, ShoppingCart, Car, BarChart3, DollarSign, TrendingUp, ArrowRight, Droplets, FolderOpen } from "lucide-react";
 
 const SlideDataLakeVsWarehouse = () => {
   return (
@@ -10,7 +10,7 @@ const SlideDataLakeVsWarehouse = () => {
       </div>
 
       <div className="slide-content relative z-10">
-        <div className="text-center mb-6">
+        <div className="text-center mb-4">
           <h2 className="text-3xl md:text-5xl font-black tracking-tight mb-2 opacity-0 animate-fade-in-up">
             <span className="text-gradient-cyan">DATA LAKE</span>{" "}
             <span className="text-foreground">vs</span>{" "}
@@ -22,21 +22,49 @@ const SlideDataLakeVsWarehouse = () => {
           {/* Data Lake */}
           <div className="opacity-0 animate-fade-in-up delay-100" style={{ animationFillMode: "forwards" }}>
             <div className="card-glass rounded-2xl p-5 h-full border border-nuage-cyan/20 glow-cyan">
-              <div className="flex items-center gap-3 mb-4">
-                <Waves className="w-8 h-8 text-nuage-cyan" />
+              <div className="flex items-center gap-3 mb-3">
+                <div className="p-2 rounded-xl bg-nuage-cyan/20">
+                  <Waves className="w-8 h-8 text-nuage-cyan animate-pulse" />
+                </div>
                 <h3 className="text-xl font-black text-nuage-cyan">DATA LAKE</h3>
               </div>
-              <p className="text-sm text-muted-foreground leading-relaxed mb-4">
-                Imagine um grande lago onde você armazena tudo – desde garrafas de água (dados brutos e não estruturados como fotos ou textos) 
-                até caixas organizadas (dados estruturados). Não importa o formato, tudo vai para o lago. Ele serve como um{" "}
-                <span className="text-foreground font-semibold">repositório central de baixo custo</span> para a totalidade dos seus dados, 
-                prontos para qualquer análise futura.
+
+              {/* Visual: data types flowing in */}
+              <div className="flex items-center justify-center gap-3 mb-3 py-2">
+                <div className="flex flex-col items-center gap-1 group">
+                  <Video className="w-5 h-5 text-nuage-cyan/70 group-hover:text-nuage-cyan group-hover:scale-125 transition-all" />
+                  <span className="text-[10px] text-muted-foreground">Vídeos</span>
+                </div>
+                <div className="flex flex-col items-center gap-1 group">
+                  <FileText className="w-5 h-5 text-nuage-cyan/70 group-hover:text-nuage-cyan group-hover:scale-125 transition-all" />
+                  <span className="text-[10px] text-muted-foreground">Textos</span>
+                </div>
+                <div className="flex flex-col items-center gap-1 group">
+                  <MessageCircle className="w-5 h-5 text-nuage-cyan/70 group-hover:text-nuage-cyan group-hover:scale-125 transition-all" />
+                  <span className="text-[10px] text-muted-foreground">Social</span>
+                </div>
+                <div className="flex flex-col items-center gap-1 group">
+                  <Database className="w-5 h-5 text-nuage-cyan/70 group-hover:text-nuage-cyan group-hover:scale-125 transition-all" />
+                  <span className="text-[10px] text-muted-foreground">Sensores</span>
+                </div>
+                <ArrowRight className="w-4 h-4 text-nuage-cyan/40 animate-pulse" />
+                <div className="p-2 rounded-lg bg-nuage-cyan/10 border border-nuage-cyan/30">
+                  <Droplets className="w-6 h-6 text-nuage-cyan" />
+                </div>
+              </div>
+
+              <p className="text-xs text-muted-foreground leading-relaxed mb-3">
+                Repositório central de <span className="text-foreground font-semibold">baixo custo</span> para todos os dados, 
+                em qualquer formato, prontos para análise futura.
               </p>
-              <div className="bg-nuage-cyan/10 rounded-lg p-4 border border-nuage-cyan/20">
-                <p className="text-xs font-semibold text-nuage-cyan mb-2">Exemplo Prático:</p>
-                <p className="text-xs text-muted-foreground leading-relaxed">
-                  Uma montadora armazena todos os vídeos de testes de colisão, dados de sensores de carros autônomos, posts de redes 
-                  sociais sobre seus veículos e registros de vendas. Tudo isso, em seu formato original, está no Data Lake.
+
+              <div className="bg-nuage-cyan/10 rounded-lg p-3 border border-nuage-cyan/20">
+                <div className="flex items-center gap-2 mb-1">
+                  <Car className="w-4 h-4 text-nuage-cyan" />
+                  <p className="text-xs font-semibold text-nuage-cyan">Exemplo — Montadora</p>
+                </div>
+                <p className="text-[11px] text-muted-foreground leading-relaxed">
+                  Vídeos de colisão, sensores autônomos, posts de redes sociais e vendas — tudo no formato original.
                 </p>
               </div>
             </div>
@@ -45,20 +73,49 @@ const SlideDataLakeVsWarehouse = () => {
           {/* Data Warehouse */}
           <div className="opacity-0 animate-fade-in-up delay-200" style={{ animationFillMode: "forwards" }}>
             <div className="card-glass rounded-2xl p-5 h-full border border-primary/20 glow-magenta">
-              <div className="flex items-center gap-3 mb-4">
-                <Archive className="w-8 h-8 text-primary" />
+              <div className="flex items-center gap-3 mb-3">
+                <div className="p-2 rounded-xl bg-primary/20">
+                  <Archive className="w-8 h-8 text-primary animate-pulse" />
+                </div>
                 <h3 className="text-xl font-black text-primary">DATA WAREHOUSE</h3>
               </div>
-              <p className="text-sm text-muted-foreground leading-relaxed mb-4">
-                Pense em uma despensa super organizada e otimizada para consulta. Nela, você só guarda ingredientes (dados) que já 
-                foram limpos, preparados e categorizados especificamente para fazer as receitas (análises) mais comuns e importantes. 
-                É ideal para <span className="text-foreground font-semibold">responder rapidamente a perguntas de negócio</span> pré-definidas.
+
+              {/* Visual: organized data */}
+              <div className="flex items-center justify-center gap-3 mb-3 py-2">
+                <div className="p-2 rounded-lg bg-primary/10 border border-primary/30">
+                  <Database className="w-6 h-6 text-primary" />
+                </div>
+                <ArrowRight className="w-4 h-4 text-primary/40 animate-pulse" />
+                <div className="flex flex-col items-center gap-1 group">
+                  <ShoppingCart className="w-5 h-5 text-primary/70 group-hover:text-primary group-hover:scale-125 transition-all" />
+                  <span className="text-[10px] text-muted-foreground">Vendas</span>
+                </div>
+                <div className="flex flex-col items-center gap-1 group">
+                  <DollarSign className="w-5 h-5 text-primary/70 group-hover:text-primary group-hover:scale-125 transition-all" />
+                  <span className="text-[10px] text-muted-foreground">Custos</span>
+                </div>
+                <div className="flex flex-col items-center gap-1 group">
+                  <BarChart3 className="w-5 h-5 text-primary/70 group-hover:text-primary group-hover:scale-125 transition-all" />
+                  <span className="text-[10px] text-muted-foreground">Margem</span>
+                </div>
+                <div className="flex flex-col items-center gap-1 group">
+                  <TrendingUp className="w-5 h-5 text-primary/70 group-hover:text-primary group-hover:scale-125 transition-all" />
+                  <span className="text-[10px] text-muted-foreground">Tendência</span>
+                </div>
+              </div>
+
+              <p className="text-xs text-muted-foreground leading-relaxed mb-3">
+                Dados <span className="text-foreground font-semibold">limpos e organizados</span> para 
+                responder rapidamente a perguntas de negócio pré-definidas.
               </p>
-              <div className="bg-primary/10 rounded-lg p-4 border border-primary/20">
-                <p className="text-xs font-semibold text-primary mb-2">Exemplo Prático:</p>
-                <p className="text-xs text-muted-foreground leading-relaxed">
-                  A montadora pega os dados de vendas e custos do Data Lake, organiza-os em tabelas de fácil acesso para responder: 
-                  "Qual a margem de lucro por modelo de carro na região X no último trimestre?" O Data Warehouse entrega essa resposta em segundos.
+
+              <div className="bg-primary/10 rounded-lg p-3 border border-primary/20">
+                <div className="flex items-center gap-2 mb-1">
+                  <Car className="w-4 h-4 text-primary" />
+                  <p className="text-xs font-semibold text-primary">Exemplo — Montadora</p>
+                </div>
+                <p className="text-[11px] text-muted-foreground leading-relaxed">
+                  "Qual a margem de lucro por modelo na região X?" — resposta em segundos.
                 </p>
               </div>
             </div>

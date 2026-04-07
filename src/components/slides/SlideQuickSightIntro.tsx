@@ -1,5 +1,6 @@
 import NuageLogo from "./NuageLogo";
-import { BarChart3, MessageSquare, Brain, Filter, Link, Lock, Code, Users, CheckCircle2 } from "lucide-react";
+import quicksightDemo from "@/assets/quicksight-demo.png";
+import { BarChart3, MessageSquare, Brain, Filter, Link, Lock, Code, Users } from "lucide-react";
 
 const SlideQuickSightIntro = () => {
   const recursos = [
@@ -21,17 +22,17 @@ const SlideQuickSightIntro = () => {
       </div>
 
       <div className="slide-content relative z-10">
-        <div className="text-center mb-4">
+        <div className="text-center mb-3">
           <h2 className="text-3xl md:text-5xl font-black tracking-tight mb-2 opacity-0 animate-fade-in-up">
             <span className="text-foreground">AMAZON</span>{" "}
             <span className="text-gradient-magenta">QUICKSIGHT</span>
           </h2>
         </div>
 
-        <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div className="opacity-0 animate-fade-in-up delay-100" style={{ animationFillMode: "forwards" }}>
-            <div className="card-glass rounded-xl p-5 h-full">
-              <p className="text-sm text-muted-foreground leading-relaxed mb-4">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-5">
+          <div className="space-y-4 opacity-0 animate-fade-in-up delay-100" style={{ animationFillMode: "forwards" }}>
+            <div className="card-glass rounded-xl p-4">
+              <p className="text-sm text-muted-foreground leading-relaxed mb-3">
                 O QuickSight é um serviço de <span className="text-foreground font-semibold">BI serverless da AWS</span>, 
                 com modelo de precificação de acordo com o seu uso e quantidade de usuários habilitados.
               </p>
@@ -40,12 +41,10 @@ const SlideQuickSightIntro = () => {
                 reaproveitando os recursos disponibilizados dentro da ferramenta.
               </p>
             </div>
-          </div>
 
-          <div className="opacity-0 animate-fade-in-up delay-200" style={{ animationFillMode: "forwards" }}>
-            <div className="card-glass rounded-xl p-5 h-full glow-magenta">
-              <h3 className="text-sm font-bold text-primary mb-3 uppercase tracking-wider">Principais Recursos</h3>
-              <div className="space-y-2">
+            <div className="card-glass rounded-xl p-4 glow-magenta">
+              <h3 className="text-sm font-bold text-primary mb-2 uppercase tracking-wider">Principais Recursos</h3>
+              <div className="space-y-1.5">
                 {recursos.map((r, i) => (
                   <div key={i} className="flex items-center gap-2">
                     <r.icon className="w-4 h-4 text-primary flex-shrink-0" />
@@ -53,6 +52,16 @@ const SlideQuickSightIntro = () => {
                   </div>
                 ))}
               </div>
+            </div>
+          </div>
+
+          <div className="opacity-0 animate-fade-in-up delay-200" style={{ animationFillMode: "forwards" }}>
+            <div className="card-glass rounded-2xl p-3 border border-primary/20 glow-cyan">
+              <img
+                src={quicksightDemo}
+                alt="Amazon QuickSight - Business Summary Dashboard"
+                className="w-full h-auto rounded-xl"
+              />
             </div>
           </div>
         </div>
