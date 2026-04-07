@@ -1,5 +1,6 @@
 import { useState, useEffect, useCallback } from "react";
 import SlideNavigation from "@/components/slides/SlideNavigation";
+import ScaledSlide from "@/components/slides/ScaledSlide";
 import Slide01Cover from "@/components/slides/Slide01Cover";
 import SlideConquistas from "@/components/slides/SlideConquistas";
 import SlideTop3Brasil from "@/components/slides/SlideTop3Brasil";
@@ -123,12 +124,14 @@ const Index = () => {
   const CurrentSlideComponent = slides[safeIndex];
 
   return (
-    <div className="relative min-h-screen overflow-hidden">
+    <div className="relative w-screen h-screen overflow-hidden">
       <div
         key={currentSlide}
         className="animate-fade-in"
       >
-        <CurrentSlideComponent />
+        <ScaledSlide>
+          <CurrentSlideComponent />
+        </ScaledSlide>
       </div>
       
       <SlideNavigation
