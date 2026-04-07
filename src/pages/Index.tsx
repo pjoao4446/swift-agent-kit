@@ -26,6 +26,7 @@ import SlideQuickSuiteBrief from "@/components/slides/SlideQuickSuiteBrief";
 import SlideCaseSurf from "@/components/slides/SlideCaseSurf";
 import SlideCaseCleartech from "@/components/slides/SlideCaseCleartech";
 // Módulo IA
+import SlideCoverIA from "@/components/slides/SlideCoverIA";
 import SlideModelosFundacionais from "@/components/slides/SlideModelosFundacionais";
 import SlideDadosDiferencial from "@/components/slides/SlideDadosDiferencial";
 import SlideAWSSimplificaNovo from "@/components/slides/SlideAWSSimplificaNovo";
@@ -70,6 +71,7 @@ const slides = [
   SlideCaseSurf,
   SlideCaseCleartech,
   // Módulo IA
+  SlideCoverIA,
   SlideModelosFundacionais,
   SlideDadosDiferencial,
   SlideAWSSimplificaNovo,
