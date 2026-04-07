@@ -63,9 +63,9 @@ const SlideBedrockArquitetura = () => {
         <NuageLogo />
       </div>
 
-      <div className="slide-content relative z-10">
-        <div className="text-center mb-4">
-          <h2 className="text-3xl md:text-4xl font-black tracking-tight mb-2 opacity-0 animate-fade-in-up delay-100">
+      <div className="slide-content relative z-10" style={{ transform: 'scale(0.92)', transformOrigin: 'top center' }}>
+        <div className="text-center mb-3">
+          <h2 className="text-3xl md:text-4xl font-black tracking-tight mb-1 opacity-0 animate-fade-in-up delay-100">
             CRIE SUAS PRÓPRIAS <span className="text-gradient-magenta">SOLUÇÕES DE IA</span>
           </h2>
           <p className="text-base text-muted-foreground opacity-0 animate-fade-in-up delay-200">
@@ -74,7 +74,7 @@ const SlideBedrockArquitetura = () => {
         </div>
 
         <div className="max-w-7xl mx-auto">
-          <div className="grid lg:grid-cols-2 gap-6 items-stretch">
+          <div className="grid lg:grid-cols-2 gap-5 items-stretch">
             
             {/* Lado Esquerdo - Animação de Fluxo */}
             <div className="card-glass p-6 rounded-2xl opacity-0 animate-fade-in-up delay-300 relative overflow-hidden flex flex-col">
