@@ -25,15 +25,7 @@ import SlideQuickSightEditor from "@/components/slides/SlideQuickSightEditor";
 import SlideQuickSuiteBrief from "@/components/slides/SlideQuickSuiteBrief";
 import SlideCaseSurf from "@/components/slides/SlideCaseSurf";
 import SlideCaseCleartech from "@/components/slides/SlideCaseCleartech";
-// Módulo Infraestrutura
-import SlideCoverInfra from "@/components/slides/SlideCoverInfra";
-import SlideInfraTI from "@/components/slides/SlideInfraTI";
-import SlideLinhaDoTempo from "@/components/slides/SlideLinhaDoTempo";
-import SlidePreNuvem from "@/components/slides/SlidePreNuvem";
-import SlideRevolucaoNuvem from "@/components/slides/SlideRevolucaoNuvem";
-import SlideResponsabilidadeCompartilhada from "@/components/slides/SlideResponsabilidadeCompartilhada";
-import SlideConhecaAWS from "@/components/slides/SlideConhecaAWS";
-import SlideServicosAWS from "@/components/slides/SlideServicosAWS";
+// Módulo IA
 // Módulo IA
 import SlideCoverIA from "@/components/slides/SlideCoverIA";
 import SlideAIOrigin from "@/components/slides/SlideAIOrigin";
@@ -82,15 +74,7 @@ const slides = [
   SlideQuickSuiteBrief,
   SlideCaseSurf,
   SlideCaseCleartech,
-  // Módulo Infraestrutura
-  SlideCoverInfra,
-  SlideInfraTI,
-  SlideLinhaDoTempo,
-  SlidePreNuvem,
-  SlideRevolucaoNuvem,
-  SlideResponsabilidadeCompartilhada,
-  SlideConhecaAWS,
-  SlideServicosAWS,
+  // Módulo IA
   // Módulo IA
   SlideCoverIA,
   SlideAIOrigin,
