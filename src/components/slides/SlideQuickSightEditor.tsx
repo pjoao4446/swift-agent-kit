@@ -1,5 +1,7 @@
 import NuageLogo from "./NuageLogo";
-import { MousePointer, Smartphone, ImageIcon } from "lucide-react";
+import { MousePointer, Smartphone } from "lucide-react";
+import qsEditor1 from "@/assets/quicksight-editor1.png";
+import qsEditor2 from "@/assets/quicksight-editor2.png";
 
 const SlideQuickSightEditor = () => {
   return (
