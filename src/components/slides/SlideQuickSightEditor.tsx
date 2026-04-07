@@ -39,17 +39,11 @@ const SlideQuickSightEditor = () => {
           </div>
 
           <div className="opacity-0 animate-fade-in-up delay-200 space-y-4" style={{ animationFillMode: "forwards" }}>
-            <div className="card-glass rounded-2xl p-6 min-h-[140px] flex items-center justify-center border border-primary/20">
-              <div className="text-center">
-                <ImageIcon className="w-10 h-10 text-muted-foreground/30 mx-auto mb-2" />
-                <p className="text-muted-foreground/50 text-xs">Imagem 1</p>
-              </div>
+            <div className="rounded-2xl overflow-hidden border border-primary/20">
+              <img src={qsEditor1} alt="QuickSight Editor - Dashboard" className="w-full h-auto" />
             </div>
-            <div className="card-glass rounded-2xl p-6 min-h-[140px] flex items-center justify-center border border-primary/20">
-              <div className="text-center">
-                <ImageIcon className="w-10 h-10 text-muted-foreground/30 mx-auto mb-2" />
-                <p className="text-muted-foreground/50 text-xs">Imagem 2</p>
-              </div>
+            <div className="rounded-2xl overflow-hidden border border-primary/20">
+              <img src={qsEditor2} alt="QuickSight Editor - SQL Query" className="w-full h-auto" />
             </div>
           </div>
         </div>
