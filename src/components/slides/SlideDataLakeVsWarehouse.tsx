@@ -1,5 +1,5 @@
 import NuageLogo from "./NuageLogo";
-import { Waves, Archive, Database, FileText, Video, MessageCircle, ShoppingCart, Car, BarChart3, DollarSign, TrendingUp, ArrowRight, Droplets, FolderOpen } from "lucide-react";
+import { Waves, Archive, Database, FileText, Video, MessageCircle, ShoppingCart, BarChart3, DollarSign, TrendingUp, ArrowRight, Droplets } from "lucide-react";
 
 const SlideDataLakeVsWarehouse = () => {
   return (
@@ -60,11 +60,11 @@ const SlideDataLakeVsWarehouse = () => {
 
               <div className="bg-nuage-cyan/10 rounded-lg p-3 border border-nuage-cyan/20">
                 <div className="flex items-center gap-2 mb-1">
-                  <Car className="w-4 h-4 text-nuage-cyan" />
-                  <p className="text-xs font-semibold text-nuage-cyan">Exemplo — Montadora</p>
+                  <ShoppingCart className="w-4 h-4 text-nuage-cyan" />
+                  <p className="text-xs font-semibold text-nuage-cyan">Exemplo — E-commerce</p>
                 </div>
                 <p className="text-[11px] text-muted-foreground leading-relaxed">
-                  Vídeos de colisão, sensores autônomos, posts de redes sociais e vendas — tudo no formato original.
+                  Logs de navegação, avaliações de clientes, imagens de produtos, dados de campanhas e registros de vendas — tudo no formato original.
                 </p>
               </div>
             </div>
@@ -111,11 +111,11 @@ const SlideDataLakeVsWarehouse = () => {
 
               <div className="bg-primary/10 rounded-lg p-3 border border-primary/20">
                 <div className="flex items-center gap-2 mb-1">
-                  <Car className="w-4 h-4 text-primary" />
-                  <p className="text-xs font-semibold text-primary">Exemplo — Montadora</p>
+                  <ShoppingCart className="w-4 h-4 text-primary" />
+                  <p className="text-xs font-semibold text-primary">Exemplo — E-commerce</p>
                 </div>
                 <p className="text-[11px] text-muted-foreground leading-relaxed">
-                  "Qual a margem de lucro por modelo na região X?" — resposta em segundos.
+                  "Qual o ticket médio por categoria na região Sul no último trimestre?" — resposta em segundos.
                 </p>
               </div>
             </div>
