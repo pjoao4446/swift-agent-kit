@@ -41,6 +41,9 @@ const SlideCoverIA = () => {
           <span className="text-gradient-magenta">INTELIGÊNCIA</span>
           <br />
           <span className="text-foreground">ARTIFICIAL</span>
+          <br />
+          <span className="text-nuage-cyan">&</span>{" "}
+          <span className="text-gradient-gold">ANALYTICS</span>
         </h1>
 
         <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mb-12 opacity-0 animate-fade-in-up delay-200">
