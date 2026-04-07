@@ -1,5 +1,5 @@
 import NuageLogo from "./NuageLogo";
-import { Brain, Store, ArrowRight, MessageSquare, TrendingUp, Users, Database, BarChart3, GraduationCap } from "lucide-react";
+import { Brain, ArrowRight, MessageSquare, TrendingUp, Database, BarChart3, ShoppingCart, Warehouse } from "lucide-react";
 
 const SlideDadosDiferencial = () => {
   return (
@@ -18,7 +18,6 @@ const SlideDadosDiferencial = () => {
         </div>
 
         <div className="max-w-6xl mx-auto">
-          {/* Grid principal com seta centralizada */}
           <div className="grid md:grid-cols-[1fr_60px_1fr] gap-4 items-center mb-8">
             {/* IA Genérica */}
             <div className="opacity-0 animate-fade-in-up delay-100">
@@ -29,7 +28,7 @@ const SlideDadosDiferencial = () => {
               <div className="bg-primary rounded-xl p-4 mb-4 h-[72px] flex items-center">
                 <div className="flex items-center gap-3">
                   <MessageSquare className="w-6 h-6 text-foreground flex-shrink-0" />
-                  <p className="text-foreground text-sm">"Como melhorar o engajamento dos alunos em sala de aula?"</p>
+                  <p className="text-foreground text-sm">"Quais são as melhores estratégias de retenção de clientes?"</p>
                 </div>
               </div>
               <div className="card-glass p-6 rounded-xl h-[200px] flex flex-col items-center justify-center">
@@ -49,44 +48,46 @@ const SlideDadosDiferencial = () => {
             <div className="opacity-0 animate-fade-in-up delay-300">
               <div className="mb-4">
                 <h3 className="text-2xl font-bold mb-1">IA Generativa que conhece o seu negócio</h3>
-                <p className="text-muted-foreground">Sabe sobre <span className="text-nuage-cyan font-medium">sua instituição e os seus alunos</span></p>
+                <p className="text-muted-foreground">Sabe sobre <span className="text-nuage-cyan font-medium">seus clientes, vendas e operações</span></p>
               </div>
               <div className="bg-primary rounded-xl p-4 mb-4 h-[72px] flex items-center">
                 <div className="flex items-center gap-3">
                   <MessageSquare className="w-6 h-6 text-foreground flex-shrink-0" />
-                  <p className="text-foreground text-sm">"Qual foi a taxa de evasão dos alunos de Engenharia no último semestre e quais os principais motivos?"</p>
+                  <p className="text-foreground text-sm">"Qual a taxa de churn dos últimos 3 meses e quais os segmentos com maior risco?"</p>
                 </div>
               </div>
               <div className="card-glass p-6 rounded-xl h-[200px] border border-nuage-cyan/30 flex items-center justify-center">
                 <div className="grid grid-cols-2 gap-3">
                   <div className="bg-nuage-cyan/10 rounded-lg p-3 flex flex-col items-center justify-center">
                     <TrendingUp className="w-8 h-8 text-nuage-cyan mb-2" />
-                    <span className="text-sm text-muted-foreground">Desempenho</span>
+                    <span className="text-sm text-muted-foreground">Vendas</span>
                   </div>
                   <div className="bg-nuage-gold/10 rounded-lg p-3 flex flex-col items-center justify-center">
-                    <GraduationCap className="w-8 h-8 text-nuage-gold mb-2" />
-                    <span className="text-sm text-muted-foreground">Alunos</span>
+                    <ShoppingCart className="w-8 h-8 text-nuage-gold mb-2" />
+                    <span className="text-sm text-muted-foreground">E-commerce</span>
                   </div>
                   <div className="bg-primary/10 rounded-lg p-3 flex flex-col items-center justify-center">
                     <Database className="w-8 h-8 text-primary mb-2" />
-                    <span className="text-sm text-muted-foreground">Matrículas</span>
+                    <span className="text-sm text-muted-foreground">Data Lake</span>
                   </div>
                   <div className="bg-nuage-cyan/10 rounded-lg p-3 flex flex-col items-center justify-center">
-                    <BarChart3 className="w-8 h-8 text-nuage-cyan mb-2" />
-                    <span className="text-sm text-muted-foreground">Evasão</span>
+                    <Warehouse className="w-8 h-8 text-nuage-cyan mb-2" />
+                    <span className="text-sm text-muted-foreground">Data Warehouse</span>
                   </div>
                 </div>
               </div>
             </div>
           </div>
 
-          {/* Pergunta-chave */}
+          {/* Conexão Data Lake / Data Warehouse */}
           <div className="mt-6 opacity-0 animate-fade-in-up delay-400 text-center">
             <div className="inline-block">
               <span className="bg-nuage-gold px-4 py-2 text-background font-bold text-sm rounded-lg">A Pergunta-Chave:</span>
             </div>
             <p className="text-xl mt-4 text-muted-foreground">
-              Como conectar o poder dos FMs aos <span className="bg-nuage-gold/20 px-3 py-1 rounded-lg text-nuage-gold font-medium">meus dados</span> de forma segura, privada e eficaz?
+              Como conectar o poder dos FMs aos <span className="bg-nuage-gold/20 px-3 py-1 rounded-lg text-nuage-gold font-medium">meus dados</span> — 
+              no <span className="text-nuage-cyan font-semibold">Data Lake</span> ou <span className="text-primary font-semibold">Data Warehouse</span> — 
+              de forma segura, privada e eficaz?
             </p>
           </div>
         </div>
