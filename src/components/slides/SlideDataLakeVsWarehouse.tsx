@@ -1,5 +1,5 @@
 import NuageLogo from "./NuageLogo";
-import { Waves, Archive, Database, FileText, Video, MessageCircle, ShoppingCart, Car, BarChart3, DollarSign, TrendingUp, ArrowRight, Droplets, FolderOpen } from "lucide-react";
+import { Waves, Archive, Database, FileText, Video, MessageCircle, ShoppingCart, BarChart3, DollarSign, TrendingUp, ArrowRight, Droplets } from "lucide-react";
 
 const SlideDataLakeVsWarehouse = () => {
   return (
