@@ -26,13 +26,6 @@ import SlideQuickSuiteBrief from "@/components/slides/SlideQuickSuiteBrief";
 import SlideCaseSurf from "@/components/slides/SlideCaseSurf";
 import SlideCaseCleartech from "@/components/slides/SlideCaseCleartech";
 // Módulo IA
-// Módulo IA
-import SlideCoverIA from "@/components/slides/SlideCoverIA";
-import SlideAIOrigin from "@/components/slides/SlideAIOrigin";
-import SlideIATradicional from "@/components/slides/SlideIATradicional";
-import SlideMachineLearning from "@/components/slides/SlideMachineLearning";
-import SlideDeepLearning from "@/components/slides/SlideDeepLearning";
-import SlideIAGenerativa from "@/components/slides/SlideIAGenerativa";
 import SlideModelosFundacionais from "@/components/slides/SlideModelosFundacionais";
 import SlideDadosDiferencial from "@/components/slides/SlideDadosDiferencial";
 import SlideAWSSimplificaNovo from "@/components/slides/SlideAWSSimplificaNovo";
@@ -43,8 +36,10 @@ import SlideBedrockModelos from "@/components/slides/SlideBedrockModelos";
 import SlideBedrockEscolha from "@/components/slides/SlideBedrockEscolha";
 import SlideBedrockCustomizacao from "@/components/slides/SlideBedrockCustomizacao";
 import SlideBedrockArquitetura from "@/components/slides/SlideBedrockArquitetura";
+// Produtos
+import SlideQuickSuiteProduct from "@/components/slides/SlideQuickSuiteProduct";
+import SlideKiroProduct from "@/components/slides/SlideKiroProduct";
 // Encerramento
-import Slide19NextSteps from "@/components/slides/Slide19NextSteps";
 import Slide20ThankYou from "@/components/slides/Slide20ThankYou";
 
 const slides = [
@@ -75,13 +70,6 @@ const slides = [
   SlideCaseSurf,
   SlideCaseCleartech,
   // Módulo IA
-  // Módulo IA
-  SlideCoverIA,
-  SlideAIOrigin,
-  SlideIATradicional,
-  SlideMachineLearning,
-  SlideDeepLearning,
-  SlideIAGenerativa,
   SlideModelosFundacionais,
   SlideDadosDiferencial,
   SlideAWSSimplificaNovo,
@@ -92,8 +80,10 @@ const slides = [
   SlideBedrockEscolha,
   SlideBedrockCustomizacao,
   SlideBedrockArquitetura,
+  // Produtos
+  SlideQuickSuiteProduct,
+  SlideKiroProduct,
   // Encerramento
-  Slide19NextSteps,
   Slide20ThankYou,
 ];
 
