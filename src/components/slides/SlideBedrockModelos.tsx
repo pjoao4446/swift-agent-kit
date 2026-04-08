@@ -37,7 +37,7 @@ const SlideBedrockModelos = () => {
               className="pillar-card text-center py-4 opacity-0 animate-scale-in flex flex-col items-center justify-center"
               style={{ animationDelay: `${0.15 + index * 0.05}s` }}
             >
-              <div className="w-16 h-12 rounded-xl bg-secondary/50 flex items-center justify-center mx-auto mb-3 overflow-hidden">
+              <div className="w-16 h-12 rounded-xl bg-white flex items-center justify-center mx-auto mb-3 overflow-hidden">
                 {model.logo ? (
                   <img src={model.logo} alt={model.provider} className="w-10 h-10 object-contain" />
                 ) : (
