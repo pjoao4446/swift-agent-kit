@@ -1,4 +1,3 @@
-import NuageLogo from "./NuageLogo";
 import { MessageSquare, Layers, Server, Sparkles, Brain, Cpu, Zap, Cloud, Database, Settings } from "lucide-react";
 
 const SlideAWSSimplificaNovo = () => {
@@ -42,34 +41,6 @@ const SlideAWSSimplificaNovo = () => {
     <div className="slide network-bg">
       <div className="particles" />
       
-      <div className="absolute top-8 left-8 z-10">
-        <NuageLogo />
-      </div>
-
-      <div className="slide-content relative z-10">
-        <div className="text-center mb-10">
-          <h2 className="text-4xl md:text-6xl font-black tracking-tight mb-4 opacity-0 animate-fade-in-up">
-            <span className="text-gradient-gold">AWS</span> SIMPLIFICA
-          </h2>
-          <p className="text-xl text-muted-foreground opacity-0 animate-fade-in-up delay-100">
-            <span className="bg-nuage-cyan px-3 py-1 rounded-lg text-background font-medium">Como conectar</span> o poder dos FMs aos <span className="bg-nuage-gold/20 px-3 py-1 rounded-lg text-nuage-gold font-medium">meus dados</span> de forma segura, privada e eficaz?
-          </p>
-        </div>
-
-        <div className="max-w-6xl mx-auto">
-          <div className="space-y-6">
-            {layers.map((layer, index) => (
-              <div
-                key={layer.title}
-                className="opacity-0 animate-fade-in-up"
-                style={{ animationDelay: `${0.2 + index * 0.15}s` }}
-              >
-                <div className={`card-glass p-6 rounded-2xl border-l-4 ${layer.borderColor} hover:bg-background/40 transition-all duration-300`}>
-                  <div className="flex items-center gap-6">
-                    {/* Ícone principal grande */}
-                    <div className={`w-20 h-20 rounded-2xl bg-gradient-to-br ${layer.color} flex items-center justify-center flex-shrink-0 shadow-lg`}>
-                      <layer.icon className="w-10 h-10 text-background" />
-                    </div>
 
                     {/* Conteúdo */}
                     <div className="flex-1">

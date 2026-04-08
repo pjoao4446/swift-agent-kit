@@ -1,4 +1,3 @@
-import NuageLogo from "./NuageLogo";
 import { Eye, Workflow, Bot, Search, FlaskConical, BarChart3, Zap, Shield } from "lucide-react";
 import quickSuiteIcon from "@/assets/aws-icons/quicksuite.png";
 
@@ -44,18 +43,9 @@ const SlideQuickSuiteProduct = () => {
   return (
     <div className="slide network-bg">
       <div className="particles" />
-      <div className="absolute top-8 left-8 z-10">
-        <NuageLogo />
-      </div>
-
-      <div className="slide-content relative z-10">
-        <div className="text-center mb-8">
-          <div className="flex items-center justify-center gap-4 mb-4 opacity-0 animate-fade-in-up">
-            <img src={quickSuiteIcon} alt="Quick Suite" className="w-14 h-14 object-contain" />
             <h2 className="text-4xl md:text-5xl font-black tracking-tight">
               Amazon Quick <span className="text-gradient-magenta">Suite</span>
             </h2>
-          </div>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto opacity-0 animate-fade-in-up delay-100">
             Plataforma unificada de BI e automação no-code, powered by <span className="text-primary font-semibold">Amazon Q</span>
           </p>

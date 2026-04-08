@@ -1,4 +1,3 @@
-import NuageLogo from "./NuageLogo";
 import { FileCode, GitBranch, CheckCircle, Cpu, Users, Lightbulb } from "lucide-react";
 import kiroIcon from "@/assets/aws-icons/kiro.jpg";
 
@@ -37,16 +36,6 @@ const SlideKiroProduct = () => {
   return (
     <div className="slide network-bg">
       <div className="particles" />
-      <div className="absolute top-8 left-8 z-10">
-        <NuageLogo />
-      </div>
-
-      <div className="slide-content relative z-10">
-        <div className="text-center mb-8">
-          <div className="flex items-center justify-center gap-4 mb-4 opacity-0 animate-fade-in-up">
-            <div className="w-14 h-14 rounded-2xl overflow-hidden">
-              <img src={kiroIcon} alt="Kiro" className="w-full h-full object-cover" />
-            </div>
             <h2 className="text-4xl md:text-5xl font-black tracking-tight">
               Amazon <span className="text-gradient-magenta">Kiro</span>
             </h2>
