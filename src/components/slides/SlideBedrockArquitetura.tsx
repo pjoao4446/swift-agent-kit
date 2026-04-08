@@ -69,7 +69,8 @@ const SlideBedrockArquitetura = () => {
         </div>
 
         <div className="flex gap-6 max-w-6xl mx-auto w-full">
-          <div className="flex-1 card-glass rounded-2xl p-5 opacity-0 animate-fade-in-up delay-200" style={{ animationFillMode: "forwards" }}>
+          {/* Lado Esquerdo - Sequence Flow */}
+          <div className="flex-1 card-glass rounded-2xl p-5 opacity-0 animate-fade-in-up delay-200 flex flex-col" style={{ animationFillMode: "forwards" }}>
 
               <h3 className="text-sm font-bold text-nuage-cyan uppercase tracking-wider mb-4 relative">
                 <Zap className="w-4 h-4 inline mr-2" />
@@ -168,6 +169,7 @@ const SlideBedrockArquitetura = () => {
                       : 'bg-primary/20 border border-primary/30'
                   }`}>
                     <Smartphone className="w-8 h-8 text-foreground" />
+                  </div>
                   <p className="text-sm text-center mt-2 font-mono text-muted-foreground">Client App</p>
                 </div>
 
@@ -420,7 +422,6 @@ const SlideBedrockArquitetura = () => {
                 "Baseado no desempenho dos meus alunos no último semestre, quais disciplinas precisam de reforço e qual a melhor estratégia pedagógica?"
               </p>
             </div>
-          </div>
         </div>
       </div>
     </div>
