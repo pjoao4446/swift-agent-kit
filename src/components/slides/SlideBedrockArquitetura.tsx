@@ -57,8 +57,20 @@ const SlideBedrockArquitetura = () => {
   return (
     <div className="slide network-bg overflow-hidden">
       <div className="particles" />
-      
-              
+
+      <div className="slide-content relative z-10 flex flex-col justify-center h-full !max-w-none" style={{ transform: 'scale(0.88)', transformOrigin: 'center center' }}>
+        <div className="text-center mb-4">
+          <h2 className="text-3xl md:text-4xl font-black tracking-tight mb-2 opacity-0 animate-fade-in-up">
+            Crie suas próprias <span className="text-gradient-magenta">Soluções de IA</span>
+          </h2>
+          <p className="text-base text-muted-foreground opacity-0 animate-fade-in-up delay-100">
+            Arquitetura serverless com Amazon Bedrock
+          </p>
+        </div>
+
+        <div className="flex gap-6 max-w-6xl mx-auto w-full">
+          <div className="flex-1 card-glass rounded-2xl p-5 opacity-0 animate-fade-in-up delay-200" style={{ animationFillMode: "forwards" }}>
+
               <h3 className="text-sm font-bold text-nuage-cyan uppercase tracking-wider mb-4 relative">
                 <Zap className="w-4 h-4 inline mr-2" />
                 Sequence Flow
