@@ -422,7 +422,6 @@ const SlideBedrockArquitetura = () => {
                 "Baseado no desempenho dos meus alunos no último semestre, quais disciplinas precisam de reforço e qual a melhor estratégia pedagógica?"
               </p>
             </div>
-          </div>
         </div>
       </div>
     </div>
