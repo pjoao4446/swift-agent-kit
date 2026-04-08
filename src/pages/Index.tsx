@@ -4,6 +4,7 @@ import ScaledSlide from "@/components/slides/ScaledSlide";
 import Slide01Cover from "@/components/slides/Slide01Cover";
 // Módulo IA
 import SlideCoverIA from "@/components/slides/SlideCoverIA";
+import SlideEvolucaoIA from "@/components/slides/SlideEvolucaoIA";
 import SlideModelosFundacionais from "@/components/slides/SlideModelosFundacionais";
 import SlideDadosDiferencial from "@/components/slides/SlideDadosDiferencial";
 import SlideAWSSimplificaNovo from "@/components/slides/SlideAWSSimplificaNovo";
@@ -25,6 +26,7 @@ const slides = [
   Slide01Cover,
   // Módulo IA
   SlideCoverIA,
+  SlideEvolucaoIA,
   SlideModelosFundacionais,
   SlideDadosDiferencial,
   SlideAWSSimplificaNovo,
