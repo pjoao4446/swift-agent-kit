@@ -25,7 +25,6 @@ const slides = [
   // Capa
   Slide01Cover,
   // Módulo IA
-  SlideCoverIA,
   SlideEvolucaoIA,
   SlideModelosFundacionais,
   SlideDadosDiferencial,
