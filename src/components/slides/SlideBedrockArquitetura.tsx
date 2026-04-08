@@ -168,6 +168,7 @@ const SlideBedrockArquitetura = () => {
                       : 'bg-primary/20 border border-primary/30'
                   }`}>
                     <Smartphone className="w-8 h-8 text-foreground" />
+                  </div>
                   <p className="text-sm text-center mt-2 font-mono text-muted-foreground">Client App</p>
                 </div>
 
