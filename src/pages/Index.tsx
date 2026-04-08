@@ -18,6 +18,7 @@ import SlideBedrockArquitetura from "@/components/slides/SlideBedrockArquitetura
 // Produtos
 import SlideQuickSuiteProduct from "@/components/slides/SlideQuickSuiteProduct";
 import SlideKiroProduct from "@/components/slides/SlideKiroProduct";
+import SlideIAGenerativaValor from "@/components/slides/SlideIAGenerativaValor";
 // Encerramento
 import Slide20ThankYou from "@/components/slides/Slide20ThankYou";
 
@@ -39,6 +40,8 @@ const slides = [
   // Produtos
   SlideQuickSuiteProduct,
   SlideKiroProduct,
+  // Valor da IA
+  SlideIAGenerativaValor,
   // Encerramento
   Slide20ThankYou,
 ];
