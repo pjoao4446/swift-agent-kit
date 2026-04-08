@@ -1,4 +1,3 @@
-import NuageLogo from "./NuageLogo";
 import { Smartphone, ArrowRight, Zap, Cloud } from "lucide-react";
 import { useEffect, useState } from "react";
 
@@ -59,26 +58,6 @@ const SlideBedrockArquitetura = () => {
     <div className="slide network-bg overflow-hidden">
       <div className="particles" />
       
-      <div className="absolute top-8 left-8 z-10">
-        <NuageLogo />
-      </div>
-
-      <div className="slide-content relative z-10 flex flex-col justify-center h-full !max-w-none" style={{ transform: 'scale(0.88)', transformOrigin: 'center center' }}>
-        <div className="text-center mb-3">
-          <h2 className="text-3xl md:text-4xl font-black tracking-tight mb-1 opacity-0 animate-fade-in-up delay-100">
-            CRIE SUAS PRÓPRIAS <span className="text-gradient-magenta">SOLUÇÕES DE IA</span>
-          </h2>
-          <p className="text-base text-muted-foreground opacity-0 animate-fade-in-up delay-200">
-            Fluxo completo de uma aplicação com IA Generativa
-          </p>
-        </div>
-
-        <div className="max-w-7xl mx-auto">
-          <div className="grid lg:grid-cols-2 gap-5 items-stretch">
-            
-            {/* Lado Esquerdo - Animação de Fluxo */}
-            <div className="card-glass p-6 rounded-2xl opacity-0 animate-fade-in-up delay-300 relative overflow-hidden flex flex-col">
-              <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-nuage-cyan/5" />
               
               <h3 className="text-sm font-bold text-nuage-cyan uppercase tracking-wider mb-4 relative">
                 <Zap className="w-4 h-4 inline mr-2" />
@@ -177,7 +156,6 @@ const SlideBedrockArquitetura = () => {
                       : 'bg-primary/20 border border-primary/30'
                   }`}>
                     <Smartphone className="w-8 h-8 text-foreground" />
-                  </div>
                   <p className="text-sm text-center mt-2 font-mono text-muted-foreground">Client App</p>
                 </div>
 
