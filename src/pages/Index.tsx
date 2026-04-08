@@ -2,30 +2,6 @@ import { useState, useEffect, useCallback } from "react";
 import SlideNavigation from "@/components/slides/SlideNavigation";
 import ScaledSlide from "@/components/slides/ScaledSlide";
 import Slide01Cover from "@/components/slides/Slide01Cover";
-import SlideConquistas from "@/components/slides/SlideConquistas";
-import SlideTop3Brasil from "@/components/slides/SlideTop3Brasil";
-import SlideOfertasServicos from "@/components/slides/SlideOfertasServicos";
-// Módulo Dados
-import SlideDadosCapa from "@/components/slides/SlideDadosCapa";
-import SlideDadosGerados from "@/components/slides/SlideDadosGerados";
-import SlideDadosRepresados from "@/components/slides/SlideDadosRepresados";
-import SlideDadosDesafio from "@/components/slides/SlideDadosDesafio";
-import SlideDadosLabirinto from "@/components/slides/SlideDadosLabirinto";
-import SlideCustoDemora from "@/components/slides/SlideCustoDemora";
-import SlideDataDrivenCapa from "@/components/slides/SlideDataDrivenCapa";
-import SlideDataDrivenConceito from "@/components/slides/SlideDataDrivenConceito";
-import SlideJornadaDecisao from "@/components/slides/SlideJornadaDecisao";
-import SlideJornadaIceberg from "@/components/slides/SlideJornadaIceberg";
-import SlideJornadaInicio from "@/components/slides/SlideJornadaInicio";
-import SlideDataLakeVsWarehouse from "@/components/slides/SlideDataLakeVsWarehouse";
-import SlidePilaresDataDriven from "@/components/slides/SlidePilaresDataDriven";
-import SlideAWSDataDriven from "@/components/slides/SlideAWSDataDriven";
-import SlideArquiteturaReferencia from "@/components/slides/SlideArquiteturaReferencia";
-import SlideQuickSightIntro from "@/components/slides/SlideQuickSightIntro";
-import SlideQuickSightEditor from "@/components/slides/SlideQuickSightEditor";
-import SlideQuickSuiteBrief from "@/components/slides/SlideQuickSuiteBrief";
-import SlideCaseSurf from "@/components/slides/SlideCaseSurf";
-import SlideCaseCleartech from "@/components/slides/SlideCaseCleartech";
 // Módulo IA
 import SlideCoverIA from "@/components/slides/SlideCoverIA";
 import SlideModelosFundacionais from "@/components/slides/SlideModelosFundacionais";
@@ -45,32 +21,8 @@ import SlideKiroProduct from "@/components/slides/SlideKiroProduct";
 import Slide20ThankYou from "@/components/slides/Slide20ThankYou";
 
 const slides = [
-  // Módulo 1: Abertura NuageIT
+  // Capa
   Slide01Cover,
-  SlideConquistas,
-  SlideTop3Brasil,
-  SlideOfertasServicos,
-  // Módulo Dados
-  SlideDadosCapa,
-  SlideDadosGerados,
-  SlideDadosRepresados,
-  SlideDadosDesafio,
-  SlideDadosLabirinto,
-  SlideCustoDemora,
-  SlideDataDrivenCapa,
-  SlideDataDrivenConceito,
-  SlideJornadaDecisao,
-  SlideJornadaIceberg,
-  SlideJornadaInicio,
-  SlideDataLakeVsWarehouse,
-  SlidePilaresDataDriven,
-  SlideAWSDataDriven,
-  SlideArquiteturaReferencia,
-  SlideQuickSightIntro,
-  SlideQuickSightEditor,
-  SlideQuickSuiteBrief,
-  SlideCaseSurf,
-  SlideCaseCleartech,
   // Módulo IA
   SlideCoverIA,
   SlideModelosFundacionais,

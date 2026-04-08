@@ -15,16 +15,17 @@ const Slide01Cover = () => {
         </div>
 
         <h1 className="text-5xl md:text-7xl lg:text-8xl font-black tracking-tighter mb-6 opacity-0 animate-fade-in-up delay-100">
-          <span className="text-foreground">EVENTO</span>
+          <span className="text-foreground">EDUAI</span>
           <br />
-          <span className="text-gradient-magenta">DATA FOUNDATION</span>
+          <span className="text-gradient-magenta">IMMERSION TECHNICAL DAY</span>
         </h1>
 
         <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mb-12 opacity-0 animate-fade-in-up delay-200">
-          Descubra como transformar{" "}
-          <span className="text-nuage-cyan font-semibold">dados em vantagem competitiva</span>{" "}
-          e construir uma{" "}
-          <span className="text-nuage-cyan font-semibold">fundação sólida para decisões inteligentes</span>
+          Como a AWS simplifica a utilização dos{" "}
+          <span className="text-nuage-cyan font-semibold">Modelos Fundacionais</span>{" "}
+          e na criação de{" "}
+          <span className="text-nuage-cyan font-semibold">soluções de IA Generativa únicas e customizadas</span>{" "}
+          para o seu negócio
         </p>
 
         <div className="flex gap-4 opacity-0 animate-fade-in-up delay-300">
