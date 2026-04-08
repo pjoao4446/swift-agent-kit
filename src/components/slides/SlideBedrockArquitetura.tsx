@@ -69,7 +69,8 @@ const SlideBedrockArquitetura = () => {
         </div>
 
         <div className="flex gap-6 max-w-6xl mx-auto w-full">
-          <div className="flex-1 card-glass rounded-2xl p-5 opacity-0 animate-fade-in-up delay-200" style={{ animationFillMode: "forwards" }}>
+          {/* Lado Esquerdo - Sequence Flow */}
+          <div className="flex-1 card-glass rounded-2xl p-5 opacity-0 animate-fade-in-up delay-200 flex flex-col" style={{ animationFillMode: "forwards" }}>
 
               <h3 className="text-sm font-bold text-nuage-cyan uppercase tracking-wider mb-4 relative">
                 <Zap className="w-4 h-4 inline mr-2" />
