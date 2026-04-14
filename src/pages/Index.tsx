@@ -21,7 +21,7 @@ import SlideKiroProduct from "@/components/slides/SlideKiroProduct";
 import SlideIAGenerativaValor from "@/components/slides/SlideIAGenerativaValor";
 // Encerramento
 import Slide20ThankYou from "@/components/slides/Slide20ThankYou";
-
+import ExportPDFButton from "@/components/slides/ExportPDFButton";
 const slides = [
   // Capa
   Slide01Cover,
@@ -94,6 +94,8 @@ const Index = () => {
         onNext={goToNext}
         onGoToSlide={goToSlide}
       />
+
+      <ExportPDFButton slides={slides} />
     </div>
   );
 };
