@@ -36,7 +36,8 @@ const ExportPDFButton = ({ slides }: ExportPDFButtonProps) => {
       }
       /* html2canvas does not support background-clip:text – replace gradient text with solid colors */
       .pdf-export-container .text-gradient-magenta,
-      .pdf-export-container .text-gradient-cyan {
+      .pdf-export-container .text-gradient-cyan,
+      .pdf-export-container .text-gradient-gold {
         -webkit-background-clip: unset !important;
         background-clip: unset !important;
         -webkit-text-fill-color: unset !important;
@@ -47,6 +48,9 @@ const ExportPDFButton = ({ slides }: ExportPDFButtonProps) => {
       }
       .pdf-export-container .text-gradient-cyan {
         color: #00d4ff !important;
+      }
+      .pdf-export-container .text-gradient-gold {
+        color: #f0a500 !important;
       }
     `;
     document.head.appendChild(overrideStyle);
