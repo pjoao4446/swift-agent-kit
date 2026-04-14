@@ -94,9 +94,13 @@ const ExportPDFButton = ({ slides }: ExportPDFButtonProps) => {
       }
 
       document.body.removeChild(container);
+      document.head.removeChild(overrideStyle);
       pdf.save("NuageIT-Apresentacao.pdf");
     } catch (err) {
       console.error("Erro ao exportar PDF:", err);
+      if (document.getElementById("pdf-export-overrides")) {
+        document.head.removeChild(overrideStyle);
+      }
     } finally {
       setExporting(false);
       setProgress(0);
