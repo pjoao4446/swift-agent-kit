@@ -94,6 +94,8 @@ const Index = () => {
         onNext={goToNext}
         onGoToSlide={goToSlide}
       />
+
+      <ExportPDFButton slides={slides} />
     </div>
   );
 };
