@@ -15,10 +15,33 @@ const ExportPDFButton = ({ slides }: ExportPDFButtonProps) => {
     setExporting(true);
     setProgress(0);
 
+    // Inject a global style to force all animated elements to their final visible state
+    const overrideStyle = document.createElement("style");
+    overrideStyle.id = "pdf-export-overrides";
+    overrideStyle.textContent = `
+      .pdf-export-container * {
+        opacity: 1 !important;
+        transform: none !important;
+        animation: none !important;
+        transition: none !important;
+        animation-delay: 0s !important;
+        animation-fill-mode: forwards !important;
+      }
+      .pdf-export-container .particles,
+      .pdf-export-container .network-lines {
+        display: none !important;
+      }
+      .pdf-export-container .slide {
+        overflow: hidden !important;
+      }
+    `;
+    document.head.appendChild(overrideStyle);
+
     try {
       const pdf = new jsPDF({ orientation: "landscape", unit: "px", format: [1280, 720] });
 
       const container = document.createElement("div");
+      container.className = "pdf-export-container";
       container.style.position = "fixed";
       container.style.left = "-9999px";
       container.style.top = "0";
@@ -49,10 +72,9 @@ const ExportPDFButton = ({ slides }: ExportPDFButtonProps) => {
               <SlideComp />
             </div>
           );
-          // Wait for render + images/animations
           setTimeout(() => {
             resolve();
-          }, 800);
+          }, 1000);
         });
 
         const canvas = await html2canvas(slideWrapper, {
